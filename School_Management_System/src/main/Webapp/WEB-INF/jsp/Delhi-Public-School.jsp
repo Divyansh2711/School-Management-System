@@ -64,15 +64,15 @@
         <div class="description">
             <h1 class="motto">Our Motto (Service before Self)</h1><hr class="ruler"><br>
             <h1 class="moto">Our Motto</h1><br>
-            <p class="quote">“The best way to find yourself is to lose yourself in the service of others.” - Mahatma Gandhi </p><br>
+            <p class="quote">The best way to find yourself is to lose yourself in the service of others. - Mahatma Gandhi </p><br>
             <p>To keep alive the spirit of Gandhiji in his own land, DPS Dwarka endeavours to meet the expectations of others in its attempt to follow perfect altruism. 
                 Taking up the responsibility of facilitating education to the next generation, DPS Dwarka proves to be an exemplar of assistance at every opportunity. 
                 With the wish to extend its helping hand, this institution has gained the faith of society and grown in leaps and bounds. From instilling values in 
                 students to adopting villages and joining hands with social organizations in teaching under privileged children, DPS Dwarka has always experienced 
                 the joy of sharing. <br>  <br>                        
-                ‘Service before self’ is an intentional, lifelong mission taken up to endorse the idea of a life well lived. The idea of living a happy life is 
-                to be useful, to be honourable and to be compassionate. Becoming more generous and compassionate will have real tangible benefits in everyone’s life.  
-                Thus the motto of DPS Dwarka ‘service before self’ shapes the foundation of each and every student and how they live their lives. </p>
+                <em>Service before self</em> is an intentional, lifelong mission taken up to endorse the idea of a life well lived. The idea of living a happy life is 
+                to be useful, to be honourable and to be compassionate. Becoming more generous and compassionate will have real tangible benefits in everyone life.  
+                Thus the motto of DPS Dwarka <em>Service before self</em> shapes the foundation of each and every student and how they live their lives. </p>
         </div>
 
     </section><br><br>
