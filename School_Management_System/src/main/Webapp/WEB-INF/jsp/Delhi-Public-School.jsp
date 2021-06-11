@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet"
-	href="<c:url value="/resources/css/login.css" />">
+	href="<c:url value="/resources/css/styles.css" />">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 </head>
@@ -20,7 +20,7 @@
         <div class="text-box">
             <img class="logo" src="https://th.bing.com/th/id/OIP.4_EzOmMzv4dpp_AGVAbWhQAAAA?w=125&h=180&c=7&o=5&dpr=1.25&pid=1.7" height="100">&nbsp;
             <span class="text"><h1>DELHI PUBLIC SCHOOL</h1>
-            <p>SAIL Township, Dwarka, Delhi, India</p></span>
+            <p>SAIL Township, Delhi, India</p></span>
             <span class="links">
                 <nav class="topnav">
                     <ul id="topnav">
