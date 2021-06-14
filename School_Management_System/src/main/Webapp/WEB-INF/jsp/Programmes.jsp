@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
   <meta charset="ISO-8859-1">
-  <title>Welcome to DPS Delhi</title>
+  <title>Programmes</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -17,7 +17,7 @@
 </head>
 <body>
     <section class="sec" ><br>
-        <div class="text-box" style="align-items: center;">
+        <div class="text-box">
             <img class="logo" src="https://th.bing.com/th/id/OIP.4_EzOmMzv4dpp_AGVAbWhQAAAA?w=125&h=180&c=7&o=5&dpr=1.25&pid=1.7" height="100">&nbsp;
             <span class="text"><h1>DELHI PUBLIC SCHOOL</h1>
             <p>SAIL Township, Delhi, India</p></span>
@@ -30,7 +30,7 @@
                     </ul>
                 </nav>
             </span>
-            <span class="registration"><button onclick="window.open('/DPS/school/registration')" class="register" type="submit" >Registration</button> </span>
+            <span class="registration"><button onclick="window.open('/DPS/school/registration')" class="register" type="submit">Registration</button> </span>
             <span class="fback"><button class="feedback" href="/feedback" type="submit">Feedback</button> </span>
         </div>
         <br>
@@ -53,30 +53,31 @@
                 <li><a href="/DPS/school/Contact Us">Contact US</a></li>
             </ul>
         </nav>
-       <div class="images">
-        <div class="row">
-            <div class="column">
-                <img src="https://west.dpsbangalore.edu.in/wp-content/uploads/2020/10/1.jpg" width="650" height="200"></div>
-            <div class="column">
-                <iframe src="https://calendar.google.com/calendar/embed?src=divyanshba4%40gmail.com&ctz=Asia%2FKolkata" style="border: 0" width="300" height="200" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </div>
-        </div>
-        <div class="description">
-            <h1 class="motto">Our Motto (Service before Self)</h1><hr class="ruler"><br>
-            <h1 class="moto">Our Motto</h1><br>
-            <p class="quote">The best way to find yourself is to lose yourself in the service of others. - Mahatma Gandhi </p><br>
-            <p>To keep alive the spirit of Gandhiji in his own land, DPS Dwarka endeavours to meet the expectations of others in its attempt to follow perfect altruism. 
-                Taking up the responsibility of facilitating education to the next generation, DPS Dwarka proves to be an exemplar of assistance at every opportunity. 
-                With the wish to extend its helping hand, this institution has gained the faith of society and grown in leaps and bounds. From instilling values in 
-                students to adopting villages and joining hands with social organizations in teaching under privileged children, DPS Dwarka has always experienced 
-                the joy of sharing. <br>  <br>                        
-                <em>Service before self</em> is an intentional, lifelong mission taken up to endorse the idea of a life well lived. The idea of living a happy life is 
-                to be useful, to be honourable and to be compassionate. Becoming more generous and compassionate will have real tangible benefits in everyone life.  
-                Thus the motto of DPS Dwarka <em>Service before self</em> shapes the foundation of each and every student and how they live their lives. </p>
-        </div>
+       <br>
 
+    <div class="description">
+        <h1 class="about">Programmes</h1><hr class="ruler"><br>
+        <h1>Extra Curricular</h1><br>
+        <p class="quote"><strong>Co-curricular activities prepare the students in the Art of living and working together. </strong></p><br>
+        <p><em>Children prosper more when the curriculum celebrates various talents!</em></p><br>
+        <p>
+            Co-scholastic activities are conducted to enhance development of various skills and foster a better and competitive environment for the overall holistic development. Students participate in various Inter House competitions with lot of zest and zeal, showcase their ceativity, develop sportsmanship, present their artistic skill and information in an innovative and aesthetic manner. Various Inter School Competitions help develop creative skill, oratory skills, fosters team spirit and moulds them to be a confident individual.
+        </p><br>
+        <img src="https://thumbs.dreamstime.com/b/men-play-basketball-as-recreational-sport-enjoy-happiness-brought-basketball-shenzhen-china-shenzhen-china-men-118995878.jpg"><br><br>
+
+        <h1 class="about">Visual Arts</h1><br>
+        <p>
+            Today more than ever art is needed by our young people as a forum for safe expression, communication, exploration, imagination, and cultural and historical understanding. A strong arts education promotes the skills children need to be successful. Exposure to art education promotes self-directed learning and sharpens critical as well as creative skills.
+        </p><br>
+           <p>Simple creative activities are some of the building blocks of child development. Learning to create and appreciate visual aesthetics may be more important than ever to the development of the next generation as they grow up. Drawing, sculpting with clay and threading beads on a string all develop visual-spatial skills.</p><br>
+           <p>We at DPS- Delhi expand the scope of the classroom through workshops and interactive sessions by guest artists. These programs focus on the value of learning through original artworks. Participants explore the creative process, historical context and the nature of aesthetic experience.
+        </p><br>
+        <img src="https://dpsbopal-ahd.edu.in/Uploads/IMG-20191120-WA0021_201911270228309133.jpg" width="800" height="400"><br><br>
+
+    </div>
     </section><br><br>
+
+    
     <section class="school"><br>
         <div class="ro">
             <div class="col" id="ourschool">

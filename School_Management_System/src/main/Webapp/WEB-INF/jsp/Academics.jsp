@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
   <meta charset="ISO-8859-1">
-  <title>Welcome to DPS Delhi</title>
+  <title>Academic Programmes</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -17,7 +17,7 @@
 </head>
 <body>
     <section class="sec" ><br>
-        <div class="text-box" style="align-items: center;">
+        <div class="text-box">
             <img class="logo" src="https://th.bing.com/th/id/OIP.4_EzOmMzv4dpp_AGVAbWhQAAAA?w=125&h=180&c=7&o=5&dpr=1.25&pid=1.7" height="100">&nbsp;
             <span class="text"><h1>DELHI PUBLIC SCHOOL</h1>
             <p>SAIL Township, Delhi, India</p></span>
@@ -30,7 +30,7 @@
                     </ul>
                 </nav>
             </span>
-            <span class="registration"><button onclick="window.open('/DPS/school/registration')" class="register" type="submit" >Registration</button> </span>
+            <span class="registration"><button onclick="window.open('/DPS/school/registration')" class="register" type="submit">Registration</button> </span>
             <span class="fback"><button class="feedback" href="/feedback" type="submit">Feedback</button> </span>
         </div>
         <br>
@@ -53,27 +53,31 @@
                 <li><a href="/DPS/school/Contact Us">Contact US</a></li>
             </ul>
         </nav>
-       <div class="images">
-        <div class="row">
-            <div class="column">
-                <img src="https://west.dpsbangalore.edu.in/wp-content/uploads/2020/10/1.jpg" width="650" height="200"></div>
-            <div class="column">
-                <iframe src="https://calendar.google.com/calendar/embed?src=divyanshba4%40gmail.com&ctz=Asia%2FKolkata" style="border: 0" width="300" height="200" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </div>
-        </div>
+       <br>
+
         <div class="description">
-            <h1 class="motto">Our Motto (Service before Self)</h1><hr class="ruler"><br>
-            <h1 class="moto">Our Motto</h1><br>
-            <p class="quote">The best way to find yourself is to lose yourself in the service of others. - Mahatma Gandhi </p><br>
-            <p>To keep alive the spirit of Gandhiji in his own land, DPS Dwarka endeavours to meet the expectations of others in its attempt to follow perfect altruism. 
-                Taking up the responsibility of facilitating education to the next generation, DPS Dwarka proves to be an exemplar of assistance at every opportunity. 
-                With the wish to extend its helping hand, this institution has gained the faith of society and grown in leaps and bounds. From instilling values in 
-                students to adopting villages and joining hands with social organizations in teaching under privileged children, DPS Dwarka has always experienced 
-                the joy of sharing. <br>  <br>                        
-                <em>Service before self</em> is an intentional, lifelong mission taken up to endorse the idea of a life well lived. The idea of living a happy life is 
-                to be useful, to be honourable and to be compassionate. Becoming more generous and compassionate will have real tangible benefits in everyone life.  
-                Thus the motto of DPS Dwarka <em>Service before self</em> shapes the foundation of each and every student and how they live their lives. </p>
+            <h1 class="about">ACADEMIC PROGRAMME</h1><hr class="ruler"><br>
+            <p>DPS Delhi is affiliated to CBSE, New Delhi. The curriculum followed in junior and senior classes is based on NCERT guidelines, albeit with several innovations which are introduced after much research and study. <br><br>
+             The Pre-Primary teaching broadly uses the Play Way Method to teach the curriculum. Through this method, teachers facilitate students to understand basic concepts of language and numbers thus giving them the first lessons in Life Skills. The Play Way Method is further reinforced by hands-on activities conducted in and out of the classroom. Field Trips, Nature Walks, Celebrations of Festivals, Topic-based Projects, and Science Experiments form a regular and integral part of learning-through-doing.<br><br>
+             Till class III the curriculum is theme-based. The idea behind this is to seamlessly integrate various subjects with a common thread which links them to practical aspect of life. This gives our students a holistic view and allows them to apply knowledge and correlate various subjects to real-life situations<br><br>
+             <img src="https://www.dpspatna.com/images/academic-prgrm-3.jpg"><br><br>
+             The aims of teaching and learning mathematics are to encourage and enable students to recognize that mathematics permeates the world around us and appreciate the usefulness, power and beauty of mathematics. The purpose is achieved through teaching mathematics to the students of Classes Nursery to  V in a very innovative manner and develop their abstract, logical and critical thinking. Use of Jodo Gyan Kits and self-designed Workbooks eliminate the requirement of text books to strengthen the concepts.<br><br>
+             From Class VI formal subjects like Physics, Chemistry, Biology and Political Science are introduced. NCERT books are followed in school but the methodology of delivery is unique which has been developed in consultation with leading experts. Lessons are planned so that students get to learn their subjects in a practical manner with a plethora of projects and activities.<br><br>
+             <img src="https://www.dpspatna.com/images/academic-prgrm-2.jpg"><br><br>
+             From Class IX, along with intensive studies, career orientation is introduced so that students can decide their future study options.<br><br>
+             We have also integrated certain programmes that include some important facets of education otherwise ignored these days. These include the Read Programme, SL & LP (Students Leadership and Life Skills Programme) and Financial Literacy Programme. Since we realize the importance of reading and writing in this digital age, the students are encouraged to read books and articulate their ideas impressively.<br><br>
+             <img src="https://www.dpspatna.com/images/academic-prgrm-1.jpg"><br><br>
+
+             <strong><em>Read Programme:&nbsp;</em></strong>Our schools zeal for good old reading continues unabated through the ‘Read Programme’ under which the entire school including the visitors reads silently during a specific period every Monday.<br><br>
+
+             <strong><em>SL and LP:&nbsp;</em></strong>  Students Leadership and Life Skills Programme employs S4D technique i.e. sports for Development. It refers to the intentional use of sport, physical activity and play to attain specific development objectives such as life skills. Socio emotional skills are transformative and they help make the children good communicators and co-operative members of a team.<br><br>
+
+             <img src="https://www.dpspatna.com/images/academic-prgrm-4.jpg"><br><br>
+
+             <strong>Financial Literacy Programme</strong><br><br>
+
+             Financial literacy and discipline are imperative in this age of global work culture. To ensure that our students are well versed in the principles of prudent money management, we have started Financial Literacy Programme for classes VIII to X. Beginning with the rudiments in class VIII, the programme graduates to the advanced study of the financial literacy in class X.
+            </p>
         </div>
 
     </section><br><br>

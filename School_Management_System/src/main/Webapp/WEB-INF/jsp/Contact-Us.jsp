@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
   <meta charset="ISO-8859-1">
-  <title>Welcome to DPS Delhi</title>
+  <title>Contact Us</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -17,7 +17,7 @@
 </head>
 <body>
     <section class="sec" ><br>
-        <div class="text-box" style="align-items: center;">
+        <div class="text-box">
             <img class="logo" src="https://th.bing.com/th/id/OIP.4_EzOmMzv4dpp_AGVAbWhQAAAA?w=125&h=180&c=7&o=5&dpr=1.25&pid=1.7" height="100">&nbsp;
             <span class="text"><h1>DELHI PUBLIC SCHOOL</h1>
             <p>SAIL Township, Delhi, India</p></span>
@@ -30,7 +30,7 @@
                     </ul>
                 </nav>
             </span>
-            <span class="registration"><button onclick="window.open('/DPS/school/registration')" class="register" type="submit" >Registration</button> </span>
+            <span class="registration"><button onclick="window.open('/DPS/school/registration')" class="register" type="submit">Registration</button> </span>
             <span class="fback"><button class="feedback" href="/feedback" type="submit">Feedback</button> </span>
         </div>
         <br>
@@ -53,30 +53,32 @@
                 <li><a href="/DPS/school/Contact Us">Contact US</a></li>
             </ul>
         </nav>
-       <div class="images">
-        <div class="row">
-            <div class="column">
-                <img src="https://west.dpsbangalore.edu.in/wp-content/uploads/2020/10/1.jpg" width="650" height="200"></div>
-            <div class="column">
-                <iframe src="https://calendar.google.com/calendar/embed?src=divyanshba4%40gmail.com&ctz=Asia%2FKolkata" style="border: 0" width="300" height="200" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </div>
-        </div>
-        <div class="description">
-            <h1 class="motto">Our Motto (Service before Self)</h1><hr class="ruler"><br>
-            <h1 class="moto">Our Motto</h1><br>
-            <p class="quote">The best way to find yourself is to lose yourself in the service of others. - Mahatma Gandhi </p><br>
-            <p>To keep alive the spirit of Gandhiji in his own land, DPS Dwarka endeavours to meet the expectations of others in its attempt to follow perfect altruism. 
-                Taking up the responsibility of facilitating education to the next generation, DPS Dwarka proves to be an exemplar of assistance at every opportunity. 
-                With the wish to extend its helping hand, this institution has gained the faith of society and grown in leaps and bounds. From instilling values in 
-                students to adopting villages and joining hands with social organizations in teaching under privileged children, DPS Dwarka has always experienced 
-                the joy of sharing. <br>  <br>                        
-                <em>Service before self</em> is an intentional, lifelong mission taken up to endorse the idea of a life well lived. The idea of living a happy life is 
-                to be useful, to be honourable and to be compassionate. Becoming more generous and compassionate will have real tangible benefits in everyone life.  
-                Thus the motto of DPS Dwarka <em>Service before self</em> shapes the foundation of each and every student and how they live their lives. </p>
-        </div>
+       <br>
 
+       <div class="description">
+            <h1 class="about">Contact</h1><hr class="ruler"><br>
+            <p style="padding-left: 20px;">
+                <strong>Delhi Public School-Delhi</strong><br>
+                SAIL Township, <br>
+                New Delhi - 110001.<br><br>
+                &#8481;:&nbsp; +91-11-49115487/68181584<br><br>
+                &#128231;:&nbsp;info@dpsdelhi.com<br><br>
+                Fax:&nbsp;11-681825782<br><br>
+                &#128337;&nbsp;Monday - Friday: 7:30 AM to 3:30 PM
+            </p><br><br>
+
+
+            <h3 style="font-size: medium;font-family: 'Franklin Gothic Medium';font-style: oblique;">Getting to Campus</h3><br>
+                <iframe width="800" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=800&cp=28.617494804619042~77.09150065707983&lvl=12&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+                </iframe>
+                <div style="white-space: nowrap; text-align: center; width: 800px; padding: 6px 0;">
+                    <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=28.617494804619042~77.09150065707983&amp;sty=r&amp;lvl=12&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
+                    <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=28.617494804619042~77.09150065707983&amp;sty=r&amp;lvl=12&amp;rtp=~pos.28.617494804619042_77.09150065707983____&amp;FORM=MBEDLD">Get Directions</a>
+                   
+                </div>
+       </div> 
     </section><br><br>
+
     <section class="school"><br>
         <div class="ro">
             <div class="col" id="ourschool">

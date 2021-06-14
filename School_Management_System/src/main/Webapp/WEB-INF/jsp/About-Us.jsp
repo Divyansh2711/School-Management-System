@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
   <meta charset="ISO-8859-1">
-  <title>Welcome to DPS Delhi</title>
+  <title>About DPS Delhi</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -17,7 +17,7 @@
 </head>
 <body>
     <section class="sec" ><br>
-        <div class="text-box" style="align-items: center;">
+        <div class="text-box">
             <img class="logo" src="https://th.bing.com/th/id/OIP.4_EzOmMzv4dpp_AGVAbWhQAAAA?w=125&h=180&c=7&o=5&dpr=1.25&pid=1.7" height="100">&nbsp;
             <span class="text"><h1>DELHI PUBLIC SCHOOL</h1>
             <p>SAIL Township, Delhi, India</p></span>
@@ -30,7 +30,7 @@
                     </ul>
                 </nav>
             </span>
-            <span class="registration"><button onclick="window.open('/DPS/school/registration')" class="register" type="submit" >Registration</button> </span>
+            <span class="registration"><button onclick="window.open('/DPS/school/registration')" class="register" id="registration" type="button">Registration</button> </span>
             <span class="fback"><button class="feedback" href="/feedback" type="submit">Feedback</button> </span>
         </div>
         <br>
@@ -56,24 +56,21 @@
        <div class="images">
         <div class="row">
             <div class="column">
-                <img src="https://west.dpsbangalore.edu.in/wp-content/uploads/2020/10/1.jpg" width="650" height="200"></div>
+                <img src="https://www.dpspatna.com/images/about-us.jpg" width="650" height="200"></div>
             <div class="column">
                 <iframe src="https://calendar.google.com/calendar/embed?src=divyanshba4%40gmail.com&ctz=Asia%2FKolkata" style="border: 0" width="300" height="200" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
-        </div>
+        </div><br>
         <div class="description">
-            <h1 class="motto">Our Motto (Service before Self)</h1><hr class="ruler"><br>
-            <h1 class="moto">Our Motto</h1><br>
-            <p class="quote">The best way to find yourself is to lose yourself in the service of others. - Mahatma Gandhi </p><br>
-            <p>To keep alive the spirit of Gandhiji in his own land, DPS Dwarka endeavours to meet the expectations of others in its attempt to follow perfect altruism. 
-                Taking up the responsibility of facilitating education to the next generation, DPS Dwarka proves to be an exemplar of assistance at every opportunity. 
-                With the wish to extend its helping hand, this institution has gained the faith of society and grown in leaps and bounds. From instilling values in 
-                students to adopting villages and joining hands with social organizations in teaching under privileged children, DPS Dwarka has always experienced 
-                the joy of sharing. <br>  <br>                        
-                <em>Service before self</em> is an intentional, lifelong mission taken up to endorse the idea of a life well lived. The idea of living a happy life is 
-                to be useful, to be honourable and to be compassionate. Becoming more generous and compassionate will have real tangible benefits in everyone life.  
-                Thus the motto of DPS Dwarka <em>Service before self</em> shapes the foundation of each and every student and how they live their lives. </p>
+            <h1 class="about">ABOUT DPS DELHI</h1><hr class="ruler"><br>
+            <p>Delhi Public School Society is one of the largest chains of K-12 schools in the world with over 150 schools in India and foreign shores.
+                 The first DPS School was established in 1947 and since then the society has been adding world-class 
+                 educational institutions all over India and abroad. <br>  <br>                        
+                 The Foundation was set up in 1997 with the explicit objective of establishing educational institutions which would offer 
+                 holistic education. DPS Delhi was the first milestone but certainly not the last. The Society strove to make its presence 
+                 felt in the four directions and consequently DPS Schools were established in Pune, Ludhiana and Coimbatore. 
+                 Excellent Scholastic and Co Scholastic achievements year after year have made these schools create their own niche. </p>
         </div>
 
     </section><br><br>

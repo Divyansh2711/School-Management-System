@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
   <meta charset="ISO-8859-1">
-  <title>Welcome to DPS Delhi</title>
+  <title>Transport</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -17,7 +17,7 @@
 </head>
 <body>
     <section class="sec" ><br>
-        <div class="text-box" style="align-items: center;">
+        <div class="text-box">
             <img class="logo" src="https://th.bing.com/th/id/OIP.4_EzOmMzv4dpp_AGVAbWhQAAAA?w=125&h=180&c=7&o=5&dpr=1.25&pid=1.7" height="100">&nbsp;
             <span class="text"><h1>DELHI PUBLIC SCHOOL</h1>
             <p>SAIL Township, Delhi, India</p></span>
@@ -30,7 +30,7 @@
                     </ul>
                 </nav>
             </span>
-            <span class="registration"><button onclick="window.open('/DPS/school/registration')" class="register" type="submit" >Registration</button> </span>
+            <span class="registration"><button onclick="window.open('/DPS/school/registration')" class="register" type="submit">Registration</button> </span>
             <span class="fback"><button class="feedback" href="/feedback" type="submit">Feedback</button> </span>
         </div>
         <br>
@@ -53,30 +53,16 @@
                 <li><a href="/DPS/school/Contact Us">Contact US</a></li>
             </ul>
         </nav>
-       <div class="images">
-        <div class="row">
-            <div class="column">
-                <img src="https://west.dpsbangalore.edu.in/wp-content/uploads/2020/10/1.jpg" width="650" height="200"></div>
-            <div class="column">
-                <iframe src="https://calendar.google.com/calendar/embed?src=divyanshba4%40gmail.com&ctz=Asia%2FKolkata" style="border: 0" width="300" height="200" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </div>
-        </div>
-        <div class="description">
-            <h1 class="motto">Our Motto (Service before Self)</h1><hr class="ruler"><br>
-            <h1 class="moto">Our Motto</h1><br>
-            <p class="quote">The best way to find yourself is to lose yourself in the service of others. - Mahatma Gandhi </p><br>
-            <p>To keep alive the spirit of Gandhiji in his own land, DPS Dwarka endeavours to meet the expectations of others in its attempt to follow perfect altruism. 
-                Taking up the responsibility of facilitating education to the next generation, DPS Dwarka proves to be an exemplar of assistance at every opportunity. 
-                With the wish to extend its helping hand, this institution has gained the faith of society and grown in leaps and bounds. From instilling values in 
-                students to adopting villages and joining hands with social organizations in teaching under privileged children, DPS Dwarka has always experienced 
-                the joy of sharing. <br>  <br>                        
-                <em>Service before self</em> is an intentional, lifelong mission taken up to endorse the idea of a life well lived. The idea of living a happy life is 
-                to be useful, to be honourable and to be compassionate. Becoming more generous and compassionate will have real tangible benefits in everyone life.  
-                Thus the motto of DPS Dwarka <em>Service before self</em> shapes the foundation of each and every student and how they live their lives. </p>
-        </div>
+       <br>
 
+       <div class="description">
+        <p>
+           <img src="https://www.dpspatna.com/images/transport.jpg" width="800" height="400"><br><br>
+           All students have to compulsorily avail School Transport Facility. Commuting by private vehicles will not be allowed. Exceptions will be allowed only for students residing near the School Campus and designated ‘supervision' areas. All others have to necessarily select the nearest Bus Stop while filling the Online Registration Form. Where commuting under supervision is allowed, parent must ensure that the student uses safe mode of transport. Change from school transport to own supervision or vice-versa will, ordinarily, not be allowed as this is against the school policy.  To find out more, write to us at info@dpspatna.com.
+        </p>
     </section><br><br>
+
+
     <section class="school"><br>
         <div class="ro">
             <div class="col" id="ourschool">
