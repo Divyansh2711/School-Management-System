@@ -1,0 +1,259 @@
+@charset "ISO-8859-1";
+
+*{
+    margin:0;
+    padding:0;
+  }
+   .sec{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-image: linear;
+    background-size: cover;
+    position: relative;
+  }
+    
+  .nav{
+    background-color: rgb(51, 46, 46);
+    border-radius: 50px;
+   
+  }
+
+  .nav ul{
+    overflow: auto;
+  }
+
+  .nav li{
+    float:left;
+    list-style: none;
+    padding: 10px 10px;
+  
+  }
+  .topnav li{
+    float:left;
+    list-style: none;
+  }
+  #nav{
+    padding-left: 200px;
+  }
+  #topnav{
+    padding-left: 75px;
+  }
+  .links{
+    display:inline-block;
+  }
+
+  .nav li a {
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    margin: 5px;
+  }
+  .topnav li a {
+    padding: 5px 5px;
+    text-decoration: none;
+    margin: 5px;
+  }
+  .nav .search{
+    padding-left: 105px;
+  }
+  .nav .search input{
+    border-radius: 15px;
+    text-align: left;
+    padding-left: 5px;
+  }
+  .nav a:hover{
+    color:blue;
+  }
+  .nav a:visited{
+    color:white;
+  }
+  .nav a:active{
+    color:rgb(101, 180, 11, 0.342)
+  }
+  .Admin a:hover{
+    text-decoration: underline;
+  }
+  .Admin a:visited{
+    color:red;
+  }
+  .Admin a:active{
+    color:rgb(101, 180, 11, 0.342)
+  }
+
+  .Teacher a:hover{
+    text-decoration: underline;
+  }
+  .Teacher a:visited{
+    color:red;
+  }
+  .Teacher a:active{
+    color:rgb(101, 180, 11, 0.342)
+  }
+
+  .Student a:hover{
+    text-decoration: underline;
+  }
+  .Student a:visited{
+    color:red;
+  }
+  .Student a:active{
+    color:rgb(101, 180, 11, 0.342)
+  }
+  
+    .register{
+      margin-left:470px;
+      background-color: #2f19a8;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 10%;
+      }
+      .register:hover{
+        text-decoration: underline;
+      }
+      .registration{
+        padding-left: 120px;
+      }
+      .feedback{
+        margin-left:470px;
+        background-color: #a85e19;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 10%;
+        
+        }
+        .feedback:hover{
+          text-decoration: underline;
+        }
+        .fback{
+          padding-left: 25px;
+        }
+
+
+      
+
+  .text-box {
+    font-family: 'Pattaya';
+    color:rgb(26, 105, 79);
+    padding-left: 210px;
+    font-style: bold;
+  }
+  .text-box h1{
+    font-size: 20px;
+  }
+  .text-box p{
+    font-size: 15px;
+  }
+
+  .logo{
+    width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .text{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .column{
+    float: left;
+    width:40%;
+    padding: 60px;
+  }
+  .row::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .images{
+    padding-left: 200px;
+    background-color: #eeeef5;
+  }
+
+  .description{
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: justify;
+  }
+  .description .motto{
+    font-size: 30px;
+  }
+  .description .moto{
+    font-style: bold;
+  }
+  .description .quote{
+    font-style: italic;
+  }
+  
+  
+  .description .about{
+    font-size: 30px;
+  }
+  
+  
+  .ruler{
+    background-color: rgb(124, 77, 77);
+    border-top: 2px dashed #8c8c8c;
+  }
+
+  .school{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("https://th.bing.com/th/id/R5d636f33e13d13cb6c07b4991128a55a?rik=Ub0j0uyUw%2fuhaA&riu=http%3a%2f%2fsocimages.sakalmediagroup.com%2fsakaltimes-prod%2fs3fs-public%2fnews-story%2fcover-images%2f4STP18C37604_MED_STPage16.JPG&ehk=SDt2m19YR1xBNlLbI%2ffj12WAY5aRYCyUDgTH%2bvyDSfk%3d&risl=&pid=ImgRaw");
+    color: #eeeef5;
+  }
+  .col{
+    float: left;
+    padding-left: 100px;
+  }
+  .ro::after{
+    content: "";
+    display:flex;
+    clear: both;
+  }
+  #ourschool{
+    padding-left: 240px;
+  }
+  #h1,#h2,#h3,#h4{
+    font-size: 30px;
+  }
+  .functions li a{
+    text-decoration: none;
+    color:#bebec2;;
+    font-size: 15px;
+    padding-top: 5px;
+  }
+  .functions li{
+    padding-left: 5px;
+  }
+  .functions{
+    padding-left: 20px;
+  }
+  .functions li a:hover{
+    text-decoration: underline;
+  }
+  .functions li a:active{
+    color: #196d4e;
+  }
+  .functions li a:visited{
+    color: red;
+  }
+
+  .nav ul ul{
+    position: absolute;
+    top:60px;
+    display: none;
+  }
+  .nav ul li:hover > ul{
+    display: block;
+  }
+  .nav ul ul li{
+    width:150px;
+    float: none;
+    display: list-item;
+    position: relative;
+  }

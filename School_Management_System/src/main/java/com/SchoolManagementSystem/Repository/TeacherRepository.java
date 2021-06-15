@@ -8,4 +8,6 @@ import com.SchoolManagementSystem.Model.TeacherRegistration;
 @Component
 public interface TeacherRepository extends JpaRepository<TeacherRegistration,Long>{
     TeacherRegistration findByemail(String email);
+	
+    
 }
