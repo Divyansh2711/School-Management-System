@@ -2,7 +2,6 @@ package com.SchoolManagementSystem;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import java.text.ParseException;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +25,7 @@ public class AdminRepositoryTest {
 	
 	
 	@Test
-	public void testCreateRegistration() throws ParseException {
+	public void testAdminConnection(){
 		AdminRegistration adminRegistration=new AdminRegistration();
 		
 		adminRegistration.setEmail("dk2711@gmail.com");

@@ -2,8 +2,6 @@ package com.SchoolManagementSystem;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import java.text.ParseException;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
@@ -26,7 +24,7 @@ public class TeacherRepositoryTest {
 	
 	
 	@Test
-	public void testCreateRegistration() throws ParseException {
+	public void testTeacherConnection() {
 		TeacherRegistration teacherRegistration=new TeacherRegistration();
 		
 		teacherRegistration.setEmail("dk2711@gmail.com");
@@ -35,6 +33,7 @@ public class TeacherRepositoryTest {
 		teacherRegistration.setLast_Name("Kumar");
 		teacherRegistration.setAddress("Ranchi");
 		teacherRegistration.setPhone_no("8210127675");
+		teacherRegistration.setSubject("English");
 		
 		
 		TeacherRegistration savedRegistration=teacherRepo.save(teacherRegistration);

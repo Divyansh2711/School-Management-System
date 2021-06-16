@@ -1,17 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="ISO-8859-1">
   <title>Programmes</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet"
-	href="<c:url value="/resources/css/styles.css" />">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 </head>
@@ -24,9 +19,9 @@
             <span class="links">
                 <nav class="topnav">
                     <ul id="topnav">
-                        <LI class="Admin"><a href="/adminLogin" >Admin</a></LI>
-                        <LI class="Teacher"><a href="/teacherLogin" >Teacher</a></LI>
-                        <LI class="Student"><a href="/studentLogin" >Student</a></LI>
+                        <LI class="Admin"><a th:href="@{/adminLogin}" >Admin</a></LI>
+                        <LI class="Teacher"><a th:href="@{/teacherLogin}" >Teacher</a></LI>
+                        <LI class="Student"><a th:href="@{/studentLogin}" >Student</a></LI>
                     </ul>
                 </nav>
             </span>

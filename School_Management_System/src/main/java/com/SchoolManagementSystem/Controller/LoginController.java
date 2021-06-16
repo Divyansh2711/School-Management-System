@@ -1,5 +1,7 @@
 package com.SchoolManagementSystem.Controller;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,7 +20,7 @@ import com.SchoolManagementSystem.Repository.StudentRepository;
 import com.SchoolManagementSystem.Repository.TeacherRepository;
 
 @Controller
-@SessionAttributes("email")
+@SessionAttributes({"email","address"})
 public class LoginController {
 
 	/* Object creation of Student Repository class */
@@ -40,11 +42,13 @@ public class LoginController {
 	}
 	
 	@PostMapping("/studentLogin")
-	public String login(@RequestParam("email") String email,@RequestParam("password") String password,Model model)
+	public String login(@RequestParam("email") String email,@RequestParam("password") String password,
+			Model model)
 	{
 		StudentRegistration student= repo.findByemail(email);
 		if(student.getPassword().equals(password))
 		{
+			model.addAttribute("student", student);
 			return "StudentProfile";
 		}
 		else
@@ -68,6 +72,7 @@ public class LoginController {
 		AdminRegistration admin= adminRepo.findByemail(email);
 		if(admin.getPassword().equals(password))
 		{
+			model.addAttribute("admin",admin);
 			return "AdminProfile";
 		}
 		else
@@ -89,9 +94,10 @@ public class LoginController {
 	@PostMapping("/teacherLogin")
 	public String Teacherlogin(@RequestParam("email") String email,@RequestParam("password") String password,Model model)
 	{
-		TeacherRegistration teacher= teacherRepo.findByemail(email);
+		TeacherRegistration teacher= teacherRepo.findByEmail(email);
 		if(teacher.getPassword().equals(password))
 		{
+			model.addAttribute("teacher",teacher);
 			return "TeacherProfile";
 		}
 		else

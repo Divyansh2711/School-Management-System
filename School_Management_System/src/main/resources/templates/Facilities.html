@@ -1,17 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="ISO-8859-1">
-  <title>Contact Us</title>
+  <title>Facilities</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet"
-	href="<c:url value="/resources/css/styles.css" />">
+   <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 </head>
@@ -36,9 +31,9 @@
         <br>
         <nav class="nav">
             <ul id="nav">
-                <li><a href="/DPS/school">Home</a>
-                </li>
                 <li><a href="/DPS/school/AboutUs">About Us</a>
+                </li>
+                <li><a href="/DPS/school">Home</a>
                 </li>
                 <li><a href="/DPS/school/Academics">Academics</a>
                 </li>
@@ -54,30 +49,40 @@
             </ul>
         </nav>
        <br>
+       <div class="images">
+        <div class="row">
+            <div class="column">
+                <img src="https://west.dpsbangalore.edu.in/wp-content/uploads/2020/10/1.jpg" width="650" height="200"></div>
+            <div class="column">
+                <iframe src="https://calendar.google.com/calendar/embed?src=divyanshba4%40gmail.com&ctz=Asia%2FKolkata" style="border: 0" width="300" height="200" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+        </div><br>
 
        <div class="description">
-            <h1 class="about">Contact</h1><hr class="ruler"><br>
-            <p style="padding-left: 20px;">
-                <strong>Delhi Public School-Delhi</strong><br>
-                SAIL Township, <br>
-                New Delhi - 110001.<br><br>
-                &#8481;:&nbsp; +91-11-49115487/68181584<br><br>
-                &#128231;:&nbsp;info@dpsdelhi.com<br><br>
-                Fax:&nbsp;11-681825782<br><br>
-                &#128337;&nbsp;Monday - Friday: 7:30 AM to 3:30 PM
-            </p><br><br>
+        <p>
+            <strong style="font-size: 20px;">Delhi Public School,Delhi </strong> is a member of the Delhi Public School Society. The School is promoted by the Calorx Foundation which is a Non Profit organization registered under the Indian Trust Act. Since its inception in 1996, DPS Bopal, Ahmedabad is a co-educational, English medium school affiliated to C.B.S.E, New Delhi. offering a multitude of amenities on a beautiful 13 acre campus for students  from  Jr.KG to XII .
+<br><br>
+It strives constantly for excellence and application based learning. The school has a multi-sensory, thematic play way approach to enlarge the mental horizons and broaden the outlook of a child at the pre-primary level. The methodology across the school includes a value based approach to life, develops logical thinking, facilitates creativity and excellence along with a communicative approach to language teaching. Emphasis is laid on integrated learning, blending technology with education.
+<br><br>
+The school endeavours to ensure that each and every Dipsite would grow up to be a well balanced personality with internal and external values carrying forward the vision of the school. They will learn to respect and embrace differences across varied cultures and will develop their potential by believing in themselves as capable individuals. They will learn to create, to lead, to love and live life fully.<br><br>
+        </p><br><br>
 
-
-            <h3 style="font-size: medium;font-family: 'Franklin Gothic Medium';font-style: oblique;">Getting to Campus</h3><br>
-                <iframe width="800" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=800&cp=28.617494804619042~77.09150065707983&lvl=12&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
-                </iframe>
-                <div style="white-space: nowrap; text-align: center; width: 800px; padding: 6px 0;">
-                    <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=28.617494804619042~77.09150065707983&amp;sty=r&amp;lvl=12&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
-                    <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=28.617494804619042~77.09150065707983&amp;sty=r&amp;lvl=12&amp;rtp=~pos.28.617494804619042_77.09150065707983____&amp;FORM=MBEDLD">Get Directions</a>
-                   
-                </div>
-       </div> 
+        <h1 class="about">FACILITIES</h1><hr class="ruler"><br>
+        <ul style="padding-left: 20px; font-size: 20px;">
+            <li class="facility"><strong>Library</strong></li><br><br>
+            <img src="https://dpsbopal-ahd.edu.in/Uploads/Library_201911250308442964.JPG " width="800" height="400"><br><br>
+            <li class="facility"><strong>Laboratries</strong></li><br><br>
+            <img src="https://dpsbopal-ahd.edu.in/Uploads/Laboratory_201911250312141562.JPG" width="800" height="400"><br><br>
+            <li class="facility"><strong>Infirmary</strong></li><br><br>
+            <img src="https://dpsbopal-ahd.edu.in/Uploads/Medical%20Room_201911250313437969.JPG" width="800" height="400"><br><br>
+            <li class="facility"><strong>Computer Lab</strong></li><br><br>
+            <img src="https://dpsbopal-ahd.edu.in/Uploads/Computer%20Lab_201911250315020003.JPG" width="800" height="400"><br><br>
+            <li class="facility"><strong>Smart Board</strong></li><br><br>
+            <img src="https://dpsbopal-ahd.edu.in/Uploads/Smart%20Borads_201911250316291723.jpeg" width="800" height="400"><br><br>
+        </ul>
     </section><br><br>
+
 
     <section class="school"><br>
         <div class="ro">
