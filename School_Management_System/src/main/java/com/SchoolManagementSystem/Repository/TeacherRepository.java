@@ -8,7 +8,13 @@ import com.SchoolManagementSystem.Model.TeacherRegistration;
 
 @Component
 public interface TeacherRepository extends JpaRepository<TeacherRegistration,Long>{
+<<<<<<< HEAD
    
 	@Query("select u from TeacherRegistration u where u.email = ?1")
 	TeacherRegistration findByEmail(String email) ;
+=======
+    TeacherRegistration findByemail(String email);
+	
+    
+>>>>>>> 6e3af652ebb07bc27ddff9139cdbd6ca4bc29a62
 }
