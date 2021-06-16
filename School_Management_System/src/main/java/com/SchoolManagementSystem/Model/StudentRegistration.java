@@ -56,26 +56,26 @@ public class StudentRegistration {
 	@Column(nullable=false,unique=true)
 	private String password;
 	
+	/*This is security pin column*/
+	private String securitypin;
 	
-	/* Default constructor with no fields */
-	public StudentRegistration() {
-		
-	}
-
+	
+	
 	/* Constructor with all the fields */
-	public StudentRegistration(long ID, String first_Name, String last_Name, String email,String gender,
-			String phone_no, String address, String password, String city, Long pin) {
+	public StudentRegistration(long iD, String first_Name, String last_Name, String email, String gender,
+			String phone_no, String address, String city, long pin, String password, String securitypin) {
 		super();
-		this.ID = ID;
+		ID = iD;
 		this.first_Name = first_Name;
 		this.last_Name = last_Name;
 		this.email = email;
-		this.gender=gender;
+		this.gender = gender;
 		this.phone_no = phone_no;
 		this.address = address;
-		this.city=city;
-		this.pin=pin;
+		this.city = city;
+		this.pin = pin;
 		this.password = password;
+		this.securitypin = securitypin;
 	}
 
 	/* Getter & Setter method for iD */
@@ -174,8 +174,23 @@ public class StudentRegistration {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	/* Getter & Setter method for security*/
 	
+	public String getSecuritypin() {
+		return securitypin;
+	}
+
+	public void setSecuritypin(String securitypin) {
+		this.securitypin = securitypin;
+	}
+
+	/* Default constructor with no fields */
+	public StudentRegistration() {
+		
+	}
+
 	
+
 	
 
 

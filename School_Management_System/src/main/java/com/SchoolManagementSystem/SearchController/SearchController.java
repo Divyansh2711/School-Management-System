@@ -2,6 +2,8 @@ package com.SchoolManagementSystem.SearchController;
 
 
 
+import java.util.Optional;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,9 +27,9 @@ public class SearchController {
 		return "searchStudent";
 	}
 	@PostMapping("/search_process")
-	public String searchStudent(@RequestParam("ID") long ID,Model md,StudentRegistration student,HttpSession session)
+	public String searchStudent(@RequestParam("ID") long ID,Model md,HttpSession session)
 	{
-		student = repo.findById(ID);
+		Optional<StudentRegistration>  student = repo.findById(ID);
 		if(student==null)
 		{
 			md.addAttribute("message","Please enter a valid");

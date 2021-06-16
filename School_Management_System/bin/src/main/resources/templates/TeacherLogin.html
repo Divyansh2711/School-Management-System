@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Teacher Login </title>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body><br><br><br>
+  <h1 >Enter your details below to continue</h1>  
+  <form method="post" th:action="@{/teacherLogin}">  
+      <div class="container">   
+          <div>
+              <h1 style="color: red; "th:text="${message}"></h1>
+          <input type="email" placeholder="Enter Your Username" name="email" required> </div> 
+          <div>
+          <input type="password" placeholder="Enter Password" name="password" required>  </div>
+          <button type="submit">Login</button>    
+          <button type="reset" class="resetbutton">Reset</button>
+          <a th:href="@{forgot.html}" style="color: blue;"> Forgot password?</a>
+      </div>   
+  </form>     
+</body>     
+</html>  

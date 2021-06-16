@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Login </title>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body><br><br><br>
+  <h1 >Enter your details below to continue</h1>  
+  <form method="POST" action="studentLogin">  
+      <div class="container">   
+          <div>
+              <h1 style="color: red; "th:text="${message}"></h1>
+          <input type="email" placeholder="Enter Your Username" name="email" required> </div> 
+          <div>
+          <input type="password" placeholder="Enter Password" name="password" required>  </div>
+          <button type="submit">Login</button>    
+          <button type="reset" class="resetbutton">Reset</button>
+          <a href="forgot.html" style="color: blue;"> Forgot password?</a>   <br>
+          <p>Don't have an account?&nbsp;<a href="DPS/school/registration" style="color: blue;">Register Here!!!</a><br></p>
+      </div>   
+  </form>     
+</body>     
+</html>  

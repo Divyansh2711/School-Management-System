@@ -31,7 +31,7 @@
                                     <h4 style="font-weight: 500;font-style: italic;">Hello Tarun!!!</h4>
                                     <div class="button">Edit Profile</div>
                                     <hr>
-                                    <div class="button">Search Student</div>
+                                    <div class="button" ><a href="/searchStudent">Search Student</a></div>
                                     <hr>
                                     <div class="button">Assignment</div>
                                     <hr>
