@@ -70,7 +70,7 @@ public class LoginController {
 	public String Adminlogin(@RequestParam("email") String email,@RequestParam("password") String password,Model model)
 	{
 		AdminRegistration admin= adminRepo.findByemail(email);
-		if(admin.getPassword().equals(password))
+		if(admin!=null && admin.getPassword().equals(password))
 		{
 			model.addAttribute("admin",admin);
 			return "AdminProfile";
@@ -95,7 +95,7 @@ public class LoginController {
 	public String Teacherlogin(@RequestParam("email") String email,@RequestParam("password") String password,Model model)
 	{
 		TeacherRegistration teacher= teacherRepo.findByEmail(email);
-		if(teacher.getPassword().equals(password))
+		if(teacher!=null && teacher.getPassword().equals(password))
 		{
 			model.addAttribute("teacher",teacher);
 			return "TeacherProfile";

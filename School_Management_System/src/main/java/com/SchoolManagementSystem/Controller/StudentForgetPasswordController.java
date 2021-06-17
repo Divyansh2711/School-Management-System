@@ -13,7 +13,7 @@ import com.SchoolManagementSystem.Model.StudentRegistration;
 import com.SchoolManagementSystem.Repository.StudentRepository;
 
 @Controller
-public class ForgetPasswordController {
+public class StudentForgetPasswordController {
 	
 	
 	@Autowired
@@ -38,7 +38,7 @@ public class ForgetPasswordController {
 	    
 		if (student==null)
 		{
-			session.setAttribute("message", "Please enter a valid email");
+			model.addAttribute("message", "Please enter a valid email");
 			return "StudentForgotPassword";
 		}
 		
@@ -56,7 +56,7 @@ public class ForgetPasswordController {
 		     }
 			else
 			{
-				session.setAttribute("message", "Enter Correct Security Pin");
+				model.addAttribute("message", "Enter Correct Security Pin");
 				return"StudentForgotPassword";
 			}
 		}

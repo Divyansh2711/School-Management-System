@@ -49,6 +49,8 @@ public class TeacherRegistration {
 	@Column(nullable=false,unique=true)
 	private String password;
 	
+	/*This is security pin column*/
+	private String securitypin;
 	
 	/* Default constructor with no fields */
 	public TeacherRegistration() {
@@ -62,6 +64,7 @@ public class TeacherRegistration {
 	public long getID() {
 		return ID;
 	}
+	
 
 
 	public TeacherRegistration(long iD, String first_Name, String last_Name, String subject, String email,
@@ -149,6 +152,15 @@ public class TeacherRegistration {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	/* Getter & Setter method for securitypin*/
+	public String getSecuritypin() {
+		return securitypin;
+	}
+
+	public void setSecuritypin(String securitypin) {
+		this.securitypin = securitypin;
 	}
 	
 	
