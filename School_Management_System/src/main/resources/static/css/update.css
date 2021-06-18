@@ -1,0 +1,76 @@
+* {    
+  box-sizing: border-box;    
+}    
+    
+input[type=text],input[type=number], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}       
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=update] {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=update]:hover {    
+  background-color: #45a049;    
+} 
+    
+.row button {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 40px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+.row button:hover {    
+  background-color: #45a049; 
+  text-decoration: underline;   
+}       
+    
+.container {    
+  border-radius: 5px;       
+  padding: 30px;    
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+        
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}   
+body {
+background-image: url("https://th.bing.com/th/id/R8b3865f8143ab0e8b0dc9454ff5efafc?rik=EKACrgvXp7oK4g&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fiEyqZA1.jpg&ehk=BB1FNcccwcBZeIMsv2%2fARBPIAAyhc6HHrZgFchXFh0w%3d&risl=&pid=ImgRaw");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}   
+h2{
+  text-align: center;
+} 

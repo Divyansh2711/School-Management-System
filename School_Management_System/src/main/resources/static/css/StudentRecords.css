@@ -1,0 +1,79 @@
+.details{
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: black;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 10px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+#studentDetails{
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  font-family: 'Roboto', sans-serif;
+}	
+a{
+	  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+}
+#login{
+	padding-left: 200px;
+	  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+
+}
+#home{
+	padding-left: 300px;
+	  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+
+}
+a:hover,#login:hover,#home:hover{
+	text-decoration: underline;
+}
+a:active,#login:active,#home:active{
+	color:blue
+}
+a:visited,#login:visited,#home:visited{
+	color:black
+}

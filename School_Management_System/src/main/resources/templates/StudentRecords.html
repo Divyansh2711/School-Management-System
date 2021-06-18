@@ -1,0 +1,69 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/StudentRecords.css}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+	<title>Student Records</title>
+</head>
+
+<body id="studentDetails">
+	<div align="center" class="details">
+		<h1>Student&nbsp;&nbsp;List</h1><br>
+		<table border="1" class="table table-striped table-responsive-md">
+			<thead class="tbl-header">
+				<tr>
+					<th style="text-align: center;">
+						Registration ID</a>
+					</th>
+					<th style="text-align: center;">
+						First Name</a>
+					</th>
+					<th style="text-align: center;">
+						Last Name</a>
+					</th>
+					<th style="text-align: center;">
+						Gender</a>
+					</th>
+					<th style="text-align: center;">
+						Email</a>
+					</th>
+					<th style="text-align: center;">
+						Phone No.</a>
+					</th>
+					<th style="text-align: center;">
+						Address</a>
+					</th>
+					<th style="text-align: center;">
+						Action</a>
+					</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="record : ${student}">
+					<td style="text-align: center;" th:text="${record.ID}"></td>
+					<td style="text-align: center;" th:text="${record.first_Name}"></td>
+					<td style="text-align: center;" th:text="${record.last_Name}"></td>
+					<td style="text-align: center;" th:text="${record.gender}"></td>
+					<td style="text-align: center;" th:text="${record.email}"></td>
+					<td style="text-align: center;" th:text="${record.phone_no}"></td>
+					<td th:text="${record.address}+', '+${record.city}+', '+${record.pin}"></td>
+					<td><a th:href="@{/StudentUpdate/{ID}(ID=${record.ID})}" class="btn btn-primary">Update</a><br><br>
+					<a th:href="@{/StudentDelete/{ID}(ID=${record.ID})}" class="btn btn-Danger">Delete&nbsp;</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	<a th:href="@{DPS/school/registration}">Add new Student</a>
+	<a id="login" th:href="@{/adminLogin}">Return to Login page</a>
+	<a id="home" th:href="@{DPS/school}">Return to Home page</a>
+	</div><br>
+
+</body>
+
+</html>
