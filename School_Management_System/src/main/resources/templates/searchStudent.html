@@ -1,12 +1,12 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-<title>Forgot Password Page</title>
+<title>Search Student Page </title>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 
-*, body {
+*,body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
@@ -104,8 +104,8 @@ html, body {
 
 .btn-primary{
 	padding: 9px 20px;
-    border-radius: 6px;
-	margin-top:10px;
+   
+	margin-top:5px;
     background-color: white;
     outline: none;
     border: 0px;
@@ -166,25 +166,17 @@ html, body {
                     <div class="form-items">
                     <div style="font-size: 20px;font-weight: bold;color: red;" th:text="${message}" role="alert"></div>
                   
-                        <h3>Reset Password</h3>
+                        <h3>Search Student</h3>
                         <!-- form for validation -->
                        
-                        <form th:action="@{/teacherForgotPassword/verifySecurityPin}" method="post" >
+                        <form th:action="@{/teacherProfile/searchStudent/searchResult}" method="post" >
 
-                            <div class="col-md-12">
-                               <input class="form-control" type="email" name="email" placeholder="Enter Email" required>
-                               
-                            </div>
-
-                            <div class="col-md-12">
-                                <input class="form-control" type="password" minlength ="6" maxlength="6" name="securitypin" placeholder="Enter Security Pin" required>
-                                 
-                            </div>
+                           
 
                           
 
                            <div class="col-md-12">
-                              <input class="form-control" type="password" name="newPassword" placeholder="Enter new password" minlength="6" required>
+                              <input class="form-control" type="number" name="ID" placeholder="Enter Registration id"  required>
                                
                            </div>
 
@@ -193,7 +185,7 @@ html, body {
                   
                            <div class="form-control">
 
-                            <button type="submit" class="btn-primary"> <b>Reset Password</b></button>
+                            <button type="submit" class="btn-primary"> <b>Search</b></button>
                      
                             </div>
                         </form>

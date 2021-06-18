@@ -1,4 +1,4 @@
-package com.SchoolManagementSystem.SearchController;
+package com.SchoolManagementSystem.Controller;
 
 
 
@@ -22,24 +22,24 @@ public class SearchController {
 	@Autowired
 	private StudentRepository repo;
 	
-	@GetMapping("/searchStudent")
+	@GetMapping("/teachersprofile/searchStudent")
 	public String showsearchPage() {
 		return "searchStudent";
 	}
-	@PostMapping("/search_process")
-	public String searchStudent(@RequestParam("ID") long ID,Model md,HttpSession session)
-	{
-		Optional<StudentRegistration>  student = repo.findById(ID);
-		if(student==null)
-		{
-			md.addAttribute("message","Please enter a valid");
-			return"searchStudent";
-		}
 	
+	@PostMapping("/teacherProfile/searchStudent/searchResult")
+	public String searchStudent(@RequestParam("ID") long ID,Model md,StudentRegistration student)
+	{
+        student = repo.findByID(ID);
+        if(student==null) {
+        	md.addAttribute("message","Student Not Found");
+        	return "searchStudent";
+        }
+		md.addAttribute("student",student);
+	
+	
+		return"searchStudentResult";
 		
-			md.addAttribute("message","students searchde");
-			session.setAttribute("student", student);
-			return "searchedStudentDetails";
 	
 		
 	}

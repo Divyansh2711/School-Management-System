@@ -16,6 +16,6 @@ public interface StudentRepository extends JpaRepository<StudentRegistration,Lon
     StudentRegistration findByemail(String email);
 	
 	@Query("select u from StudentRegistration u where u.id = ?1")
-    StudentRegistration findByID(String email);
+    StudentRegistration findByID(long id);
     
 }
