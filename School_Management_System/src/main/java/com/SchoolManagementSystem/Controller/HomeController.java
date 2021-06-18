@@ -56,4 +56,23 @@ public class HomeController {
 		return "Contact-Us";
 	}
 
+	@RequestMapping(value="/curriculum/pre-prim", method = RequestMethod.GET)
+	public String showPrePrimaryCurriculum(ModelMap model){
+		return "PrePrimary";
+	}
+	
+	@RequestMapping(value="/curriculum/primary", method = RequestMethod.GET)
+	public String showPrimaryCurriculum(ModelMap model){
+		return "Primary";
+	}
+	
+	@RequestMapping(value="/curriculum/secondary", method = RequestMethod.GET)
+	public String showSecondaryCurriculum(ModelMap model){
+		return "Secondary";
+	}
+	
+	@RequestMapping(value="curriculum/senir-sec", method = RequestMethod.GET)
+	public String showSeniorSecondaryCurriculum(ModelMap model){
+		return "SeniorSecondary";
+	}
 }

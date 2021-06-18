@@ -28,14 +28,14 @@ public class AdminRepositoryTest {
 	public void testAdminConnection(){
 		AdminRegistration adminRegistration=new AdminRegistration();
 		
-		adminRegistration.setEmail("dk2711@gmail.com");
-		adminRegistration.setPassword("Dk1999");
+		adminRegistration.setEmail("dk27112@gmail.com");
+		adminRegistration.setPassword("Dk19979");
 		adminRegistration.setFirst_Name("Divyansh");
 		adminRegistration.setLast_Name("Kumar");
 		adminRegistration.setAddress("Ranchi");
-		adminRegistration.setPhone_no("8210127675");
+		adminRegistration.setPhone_no("8210127678");
 		adminRegistration.setCity("Delhi");
-		adminRegistration.setPin(110006);
+		adminRegistration.setPin(110009);
 		adminRegistration.setGender("Male");
 		
 		AdminRegistration savedRegistration=adminRepo.save(adminRegistration);

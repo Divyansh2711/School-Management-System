@@ -75,7 +75,7 @@
     text-decoration: underline;
   }
   .Admin a:visited{
-    color:red;
+    color:black;
   }
   .Admin a:active{
     color:rgb(101, 180, 11, 0.342)
@@ -85,7 +85,7 @@
     text-decoration: underline;
   }
   .Teacher a:visited{
-    color:red;
+    color:black;
   }
   .Teacher a:active{
     color:rgb(101, 180, 11, 0.342)
@@ -95,7 +95,7 @@
     text-decoration: underline;
   }
   .Student a:visited{
-    color:red;
+    color:black;
   }
   .Student a:active{
     color:rgb(101, 180, 11, 0.342)
@@ -240,7 +240,7 @@
     color: #196d4e;
   }
   .functions li a:visited{
-    color: red;
+    color: white;
   }
 
   .nav ul ul{

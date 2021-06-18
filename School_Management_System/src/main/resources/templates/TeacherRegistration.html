@@ -19,20 +19,20 @@
     <!----- First Name ---------------------------------------------------------->
     <tr>
     <td>First Name</td>
-    <td><input type="text" name="first_Name" maxlength="30" placeholder="Enter your first name" required field="*{first_name}" minlength="3"/>
+    <td><input type="text" name="first_Name" maxlength="30" placeholder="Enter your first name" pattern="^[A-Za-z]+" required field="*{first_name}" minlength="3"/>
     </td>
     </tr>
      
     <!----- Last Name ---------------------------------------------------------->
     <tr>
     <td>Last Name</td>
-    <td><input type="text" name="last_Name" maxlength="30" placeholder="Enter your last name" required field="*{last_name}" minlength="1"/>
+    <td><input type="text" name="last_Name" maxlength="30" placeholder="Enter your last name" pattern="^[A-Za-z]+" required field="*{last_name}" minlength="1"/>
     </td>
     </tr>
 
     <tr>
         <td>Subject</td>
-        <td><input type="text" name="subject" maxlength="30" placeholder="Enter the Subject" required field="*{subject}" minlength="1"/>
+        <td><input type="text" name="subject" maxlength="30" placeholder="Enter the Subject" pattern="^[A-Za-z]+" required field="*{subject}" minlength="1"/>
         </td>
         </tr>
      
@@ -62,14 +62,14 @@
         <!----- City ---------------------------------------------------------->
         <tr>
             <td>City</td>
-            <td><input type="text" name="City" maxlength="30" placeholder="Enter your current city" field="*{city}" />
+            <td><input type="text" name="City" maxlength="30" pattern="^[A-Za-z]+"placeholder="Enter your current city" field="*{city}" />
             </td>
             </tr>
              
         <!----- Pin Code ---------------------------------------------------------->
         <tr>
         <td>Pin Code</td>
-        <td><input type="text" name="pin" maxlength="6" placeholder="Enter your current area code" field="*{pin}"/>
+        <td><input type="text" name="pin" maxlength="6" minlength="6" pattern="[0-9]{6}" placeholder="Enter your current area code" field="*{pin}" required/>
         </td>
         </tr>
      
@@ -77,7 +77,7 @@
         <!----- Address ---------------------------------------------------------->
         <tr>
         <td>Address<br /><br /><br /></td>
-        <td><textarea name="Address" rows="3" cols="20" placeholder="Enter your current address" required field="*{address}" minlength="10"></textarea></td>
+        <td><textarea name="Address" rows="3" cols="20" placeholder="Enter your current address"pattern="^[A-Za-z,]+" required field="*{address}" minlength="10"></textarea></td>
         </tr>
 
         <tr>

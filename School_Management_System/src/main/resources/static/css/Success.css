@@ -16,6 +16,15 @@
   border-top-left-radius: 8px;
 }
 
+#upper-side-update {
+  padding: 2em;
+  background-color:rgb(160, 179, 222);
+  display: block;
+  color: #fff;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
 #checkmark {
   font-weight: lighter;
   fill: #fff;
@@ -63,6 +72,32 @@
 		transition: all .4s ease;
 }
 .contBtn:hover {
+  -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  -webkit-transition: all .4s ease;
+		-moz-transition: all .4s ease;
+		-o-transition: all .4s ease;
+		transition: all .4s ease;
+}
+#button {
+  position: relative;
+  top: 1.5em;
+  text-decoration: none;
+  background: rgb(160, 179, 222);
+  color: #fff;
+  margin: auto;
+  padding: .8em 3em;
+  -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  border-radius: 25px;
+  -webkit-transition: all .4s ease;
+		-moz-transition: all .4s ease;
+		-o-transition: all .4s ease;
+		transition: all .4s ease;
+}
+#button:hover {
   -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
   -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
   box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
