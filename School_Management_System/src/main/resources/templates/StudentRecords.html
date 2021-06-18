@@ -52,8 +52,8 @@
 					<td style="text-align: center;" th:text="${record.email}"></td>
 					<td style="text-align: center;" th:text="${record.phone_no}"></td>
 					<td th:text="${record.address}+', '+${record.city}+', '+${record.pin}"></td>
-					<td><a th:href="@{/StudentUpdate/{ID}(ID=${record.ID})}" class="btn btn-primary">Update</a><br><br>
-					<a th:href="@{/StudentDelete/{ID}(ID=${record.ID})}" class="btn btn-Danger">Delete&nbsp;</a>
+					<td><a th:href="@{/adminProfile/StudentUpdate/{ID}(ID=${record.ID})}" class="btn btn-primary">Update</a><br><br>
+					<a th:href="@{/adminProfile/StudentDelete/{ID}(ID=${record.ID})}" class="btn btn-Danger">Delete&nbsp;</a>
 					</td>
 				</tr>
 			</tbody>

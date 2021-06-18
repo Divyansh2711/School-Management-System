@@ -61,28 +61,22 @@ public class LoginController {
 	}
 	
 	
-	@GetMapping("/adminLogin")
-	public String showAdminLoginPage() {
-		return "AdminLogin";
-	}
-	
-	@PostMapping("/adminLogin")
-	public String Adminlogin(@RequestParam("email") String email,@RequestParam("password") String password,Model model)
-	{
-		AdminRegistration admin= adminRepo.findByemail(email);
-		if(admin!=null && admin.getPassword().equals(password))
-		{
-			model.addAttribute("admin",admin);
-			return "AdminProfile";
-		}
-		else
-		{
-			model.addAttribute("message","Invalid username or password");
-			return "AdminLogin";
-			
-		}
-		
-	}
+	/*
+	 * @GetMapping("/adminLogin") public String showAdminLoginPage() { return
+	 * "AdminLogin"; }
+	 * 
+	 * @PostMapping("/adminLogin") public String Adminlogin(@RequestParam("email")
+	 * String email,@RequestParam("password") String password,Model model) {
+	 * AdminRegistration admin= adminRepo.findByemail(email); if(admin!=null &&
+	 * admin.getPassword().equals(password)) { model.addAttribute("admin",admin);
+	 * return "AdminProfile"; } else {
+	 * model.addAttribute("message","Invalid username or password"); return
+	 * "AdminLogin";
+	 * 
+	 * }
+	 * 
+	 * }
+	 */
 	
 
 	

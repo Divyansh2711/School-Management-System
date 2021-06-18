@@ -19,31 +19,31 @@ public class StudentCRUDController {
 	@Autowired
 	private StudentService studentService;
 	
-	@GetMapping("/AllStudent")
+	@GetMapping("/adminProfile/AllStudent")
 	public String viewStudentDetails(ModelMap model) {
 		model.addAttribute("student",studentService.getAllStudent());
 		return "StudentRecords";
 		}
 	
-	@PostMapping("/saveStudent")
+	@PostMapping("/adminProfile/saveStudent")
 	public String saveEmployee(@ModelAttribute("employee") StudentRegistration student) {
 		studentService.saveStudent(student);
 		return "SuccessfulUpdation";
 	}
 	
-	@RequestMapping(value="/StudentUpdate", method = RequestMethod.GET)
+	@RequestMapping(value="/adminProfile/StudentUpdate", method = RequestMethod.GET)
 	public String editStudentDetails(ModelMap model){
 		return "UpdateStudent";
 	}
 	
-	@GetMapping("/StudentUpdate/{ID}")
+	@GetMapping("adminProfile/StudentUpdate/{ID}")
 	public String updateStudentDetails(@PathVariable (value="ID") long ID,ModelMap model) {
 		StudentRegistration student=studentService.getStudentByID(ID);
 		model.addAttribute("update", student);
 		return "UpdateStudent";
 	}
 	
-	@GetMapping("/StudentDelete/{ID}")
+	@GetMapping("adminProfile/StudentDelete/{ID}")
 	public String deleteStudent(@PathVariable (value = "ID") long ID) { 
 		this.studentService.deleteStudentById(ID);
 		return "SuccessfullyDeleted";
