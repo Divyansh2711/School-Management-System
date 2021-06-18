@@ -1,0 +1,118 @@
+html, body {
+    width: 100%;
+    height:100%;
+    font-family: 'Reggae One', cursive;
+  }
+  
+  body {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5),rgba(4, 9, 30, 0.514)),url("https://th.bing.com/th/id/R5d636f33e13d13cb6c07b4991128a55a?rik=Ub0j0uyUw%2fuhaA&riu=http%3a%2f%2fsocimages.sakalmediagroup.com%2fsakaltimes-prod%2fs3fs-public%2fnews-story%2fcover-images%2f4STP18C37604_MED_STPage16.JPG&ehk=SDt2m19YR1xBNlLbI%2ffj12WAY5aRYCyUDgTH%2bvyDSfk%3d&risl=&pid=ImgRaw");
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-color:windowframe;
+      font-family: 'Reggae One', cursive;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+.main{
+    padding: 15px;
+     
+}
+.topbar{
+    background-color:rgb(85, 161, 132);
+    overflow: hidden;
+}
+
+.sidebar{
+    background-color:rgb(160, 158, 158);
+    color:black;
+    height: 100%;
+    font-weight:800;
+    font-size: large;
+    font-style: italic;
+}
+.sidebar a{
+    display: block;
+    color:greenyellow;
+    font-size: 30px;
+    font-weight: bolder;
+    font-size: large;
+    
+}
+.card{
+    position:-webkit-sticky;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    background-color: whitesmoke;
+}
+
+.button
+{
+  position: relative;
+  text-align: justify;
+  width: 280px;
+  padding-left: 20px;
+  font-size: 20px;
+  color: rgb(15, 15, 15);
+  font-family: 'Reggae One', cursive;
+  font-weight: 100;
+  border: 1px solid #0c0c0c;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 1.5s;
+
+}
+
+.button:hover
+{
+    background-color: blue;
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+              0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;           
+}
+#submit{
+    padding-right: 325px;
+    padding-left: 325px;
+}
+#submit:hover{
+    background-color: rgb(7, 7, 207);
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+              0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;  
+}
+
+.img_align{
+    vertical-align: middle;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+.logout{
+              margin-left:470px;
+              background-color: red;
+              color: white;
+              padding: 14px 20px;
+              margin: 8px 0;
+              border: none;
+              cursor: pointer;
+              width: 10%;
+              
+              }
+              .logout:hover{
+                text-decoration: underline;
+                box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+              0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee; 
+              }
+              .lout{
+                padding-left: 270px;
+              }

@@ -1,0 +1,69 @@
+<html xmlns:th="http://www.thymeleaf.org">    
+    <head>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">     
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" th:href="@{/css/feedback.css}">
+<title>Feedback Form</title>
+    </head>
+<body><br>  
+<h2>FEEDBACK FORM</h2>    
+<div class="container">
+    <form  th:method="post" th:action="@{/feedback/submitted}"> 
+
+    <div class="row">    
+    <div class="col-25">    
+        <label ><b>First Name</b></label>    
+    </div>    
+    <div class="col-75">    
+        <input type="text" name="first_Name" placeholder="Your name.." required >    
+    </div>    
+    </div> 
+
+    <div class="row">    
+    <div class="col-25">    
+        <label ><b>Last Name</b></label>    
+    </div>    
+    <div class="col-75">    
+        <input type="text"  name="last_Name" placeholder="Your last name.." required >    
+    </div>    
+    </div> 
+
+    <div class="row">    
+    <div class="col-25">    
+          <label ><b>Email Id</b></label>    
+    </div>    
+    <div class="col-75">    
+          <input type="text" name="email" placeholder="Your mail id.." required>    
+    </div>    
+    </div>
+
+    <div class="row">    
+    <div class="col-25">    
+          <label ><b>Phone No</b></label>    
+    </div>    
+    <div class="col-75">    
+        <input type="text" name="phone_no" maxlength="10" placeholder="Enter your mobile number" pattern="^[6-9]\d{9}$" required minlength="10"/> 
+    </div>    
+    </div>
+    
+
+    <div class="row">    
+      <div class="col-25">    
+        <label ><b>Description</b></label>    
+    </div>    
+    <div class="col-75">    
+        <textarea name="description" placeholder="Give feedback" style="height:100px" required></textarea>    
+    </div>    
+    </div>  
+
+
+    <div class="row">    
+      <button type="submit" >Submit</button>    
+    </div>  
+
+  </form>    
+</div>    
+    
+</body>    
+</html>

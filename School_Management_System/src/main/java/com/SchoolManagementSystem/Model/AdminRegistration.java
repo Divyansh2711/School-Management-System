@@ -56,6 +56,10 @@ public class AdminRegistration {
 	@Column(nullable=false,unique=true)
 	private String password;
 	
+	private String securitypin;
+	
+	
+
 	/* Default constructor with no fields */
 	public AdminRegistration() {
 		
@@ -174,6 +178,15 @@ public class AdminRegistration {
 		this.password = password;
 	}
 	
+	/* Getter & Setter method for securitypin */
+	public String getSecuritypin() {
+		return securitypin;
+	}
+	
+	/* Getter & Setter method for securitypin */
+	public void setSecuritypin(String securitypin) {
+		this.securitypin = securitypin;
+	}
 	
 	
 }

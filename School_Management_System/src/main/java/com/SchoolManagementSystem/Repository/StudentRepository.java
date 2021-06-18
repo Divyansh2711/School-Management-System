@@ -14,5 +14,13 @@ public interface StudentRepository extends JpaRepository<StudentRegistration,Lon
 	
 	@Query("select u from StudentRegistration u where u.email = ?1")
     StudentRegistration findByemail(String email);
+<<<<<<< HEAD
     
 }
+=======
+	
+	@Query("select u from StudentRegistration u where u.id = ?1")
+    StudentRegistration findByID(String email);
+    
+}
+>>>>>>> fa9adab204a375edbff28d292420a0613fce3d71

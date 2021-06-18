@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page isELIgnored="false"%>
+
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Successful Register </title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/Success.css}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id='card' class="animated fadeIn">
+        <div id='upper-side'>
+            <h3 id='status'>
+            Success
+          </h3>
+        </div>
+        <div id='lower-side'>
+          <p id='message' th:text="'Congratulations '+${teacher.first_name}+', your have been added.,'"><br>
+          <p id='message'>Welcome </p>
+          
+          </p>
+          <a th:href="@{DPS/school/process_TeacherRegistration}" class="contBtn">Register again</a><br><br><br><br>
+          <a th:href="@{DPS/school" class="contBtn}">Return Home</a><br><br>
+        </div>
+      </div>
+
+    </body>
+</html>
+
+
+

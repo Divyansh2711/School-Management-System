@@ -2,6 +2,7 @@ package com.SchoolManagementSystem.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -37,8 +38,11 @@ public class RegistrationController {
 	
 	
 	@PostMapping("DPS/school/registration/process_register")
-	public String processRegistration(@ModelAttribute("Studentregistration") StudentRegistration studentRegistration) {
+	public String processRegistration(Model md,StudentRegistration studentRegistration) {
+		
+
 		repo.save(studentRegistration);
+		md.addAttribute(studentRegistration);
 		return "Registration Successful";
 	}
 	
@@ -51,8 +55,11 @@ public class RegistrationController {
 	}
 	
 	@PostMapping("DPS/school/registration/process_TeacherRegistration")
-	public String processTeacherRegistration(@ModelAttribute("TeacherRegistration") TeacherRegistration teacherRegistration) {
+	public String processTeacherRegistration(Model md, TeacherRegistration teacherRegistration) {
+		
+		
 		teacherRepo.save(teacherRegistration);
+		md.addAttribute("teacher",teacherRegistration);
 		return "Success";
 	}
 	
