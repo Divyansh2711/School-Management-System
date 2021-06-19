@@ -25,18 +25,18 @@ public class StudentCRUDController {
 		return "StudentRecords";
 		}
 	
-	@PostMapping("/adminProfile/saveStudent")
+	@PostMapping("/saveStudent")
 	public String saveEmployee(@ModelAttribute("employee") StudentRegistration student) {
 		studentService.saveStudent(student);
 		return "SuccessfulUpdation";
 	}
 	
-	@RequestMapping(value="/adminProfile/StudentUpdate", method = RequestMethod.GET)
+	@RequestMapping(value="/StudentUpdate", method = RequestMethod.GET)
 	public String editStudentDetails(ModelMap model){
 		return "UpdateStudent";
 	}
 	
-	@GetMapping("adminProfile/StudentUpdate/{ID}")
+	@GetMapping("/StudentUpdate/{ID}")
 	public String updateStudentDetails(@PathVariable (value="ID") long ID,ModelMap model) {
 		StudentRegistration student=studentService.getStudentByID(ID);
 		model.addAttribute("update", student);

@@ -52,16 +52,16 @@
 					<td style="text-align: center;" th:text="${record.email}"></td>
 					<td style="text-align: center;" th:text="${record.phone_no}"></td>
 					<td th:text="${record.address}+', '+${record.city}+', '+${record.pin}"></td>
-					<td><a th:href="@{/adminProfile/StudentUpdate/{ID}(ID=${record.ID})}" class="btn btn-primary">Update</a><br><br>
+					<td><a th:href="@{/StudentUpdate/{ID}(ID=${record.ID})}" class="btn btn-primary">Update</a><br><br>
 					<a th:href="@{/adminProfile/StudentDelete/{ID}(ID=${record.ID})}" class="btn btn-Danger">Delete&nbsp;</a>
 					</td>
 				</tr>
 			</tbody>
 		</table>
 
-	<a th:href="@{DPS/school/registration}">Add new Student</a>
+	<a th:href="@{/DPS/school/registration}">Add new Student</a>
 	<a id="login" th:href="@{/adminLogin}">Return to Login page</a>
-	<a id="home" th:href="@{DPS/school}">Return to Home page</a>
+	<a id="home" th:href="@{/adminProfile}">Return to Profile page</a>
 	</div><br>
 
 </body>

@@ -41,7 +41,7 @@ public class LoginController {
 		return "StudentLogin";
 	}
 	
-	@PostMapping("/studentLogin")
+	@PostMapping("/studentlgn")
 	public String login(@RequestParam("email") String email,@RequestParam("password") String password,
 			Model model)
 	{
@@ -85,13 +85,14 @@ public class LoginController {
 		return "TeacherLogin";
 	}
 	
-	@PostMapping("/teacherLogin")
+	@PostMapping("/teacherlgn")
 	public String Teacherlogin(@RequestParam("email") String email,@RequestParam("password") String password,Model model)
 	{
 		TeacherRegistration teacher= teacherRepo.findByEmail(email);
 		if(teacher!=null && teacher.getPassword().equals(password))
 		{
 			model.addAttribute("teacher",teacher);
+			System.out.println();
 			return "TeacherProfile";
 		}
 		else

@@ -46,6 +46,12 @@ public class AdminForgotPasswordController {
 		{
 			if(encoder.matches(securitypin, admin.getSecuritypin()))
 			{
+				if (repo.findByPassword(newPassword)!=null)
+				{
+					model.addAttribute("message", "Please enter a different password");
+					return "AdminForgotPassword";
+				
+				}
 				admin.setPassword((encoder.encode(newPassword)));
 				repo.save(admin);
 				

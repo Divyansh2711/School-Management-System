@@ -58,5 +58,6 @@ public class CustomAdminDetails implements UserDetails {
 		return true;
 	}
 
+
 }
 

@@ -7,6 +7,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
         <title>Teacher Profile Page</title>
+        
+         <script>
+			function myFunction() {
+			  alert("Succefully Logged Out");
+			}
+        </script>
+        
         </head>
     <body><br><br>
         <div class="container">
@@ -15,7 +22,7 @@
                 	<form th:action="@{/logout}" method="post">
                     <img class="logo" src="https://th.bing.com/th/id/OIP.4_EzOmMzv4dpp_AGVAbWhQAAAA?w=125&h=180&c=7&o=5&dpr=1.25&pid=1.7" height ="150" width ="150">
                     <span  style="padding-left: 50px; color:rgb(76, 76, 161); font-weight:150 ;font-size:3vmax;font-family: 'Reggae One', cursive;"> Welcome Aboard!!! </span>
-                   <span class="lout"><button class="logout"  type="submit" >Logout</button></span>
+                   <span class="lout"><button class="logout"  type="submit" onclick="myFunction()" >Logout</button></span>
                    </form>
                 </div>
                     <div class="row">

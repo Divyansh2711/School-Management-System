@@ -36,10 +36,10 @@ public class AdminLoginController {
 	}
 	
 	
-	@PostMapping("/logout")
+	@GetMapping("/afterLogout")
 	public String logout()
 	{
-		return "AdminLogin";
+		return "Delhi-Public-School.html";
 		
 	}
 	
