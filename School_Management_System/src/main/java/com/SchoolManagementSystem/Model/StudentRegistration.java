@@ -21,7 +21,7 @@ public class StudentRegistration {
 	private long ID;
 	
 	
-	/* The firstName coulmn should not be null. */
+	/* The firstName column should not be null. */
 	@Column(nullable=false)
 	private String first_Name;
 	
@@ -57,7 +57,10 @@ public class StudentRegistration {
 	private String password;
 	
 	/*This is security pin column*/
+	@Column(nullable=false)
 	private String securitypin;
+	
+	private String grade;
 	
 	
 	
@@ -188,6 +191,16 @@ public class StudentRegistration {
 	public StudentRegistration() {
 		
 	}
+
+	public String getGrade() {
+		return grade;
+	}
+
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+	
+	
 
 	
 

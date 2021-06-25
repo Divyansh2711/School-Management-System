@@ -14,15 +14,24 @@ import com.SchoolManagementSystem.Repository.FeedbackRepository;
 @SessionAttributes("email")
 public class FeedbackController {
 
-	
+	/*
+	 * //object creation for FeedbackRepository
+	 */	
 	@Autowired
 	FeedbackRepository feedbackRepo;
 	
+	/*
+	 * //It will return Feedback page.
+	 */	
 	@RequestMapping("/feedback")
 	public String showFeedbackPage() {
 		return "Feedback";
 	}
 	
+	/*
+	 * //After filling the form and Successfully submitting it, it will return
+	 * FeedbackSubmitted page.
+	 */	
 	@PostMapping("/feedback/submitted")
 	public String submitFeedback(@ModelAttribute("Feedback") Feedback feedback) {
 		feedbackRepo.save(feedback);

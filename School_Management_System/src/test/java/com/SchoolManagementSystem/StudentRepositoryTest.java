@@ -33,10 +33,11 @@ public class StudentRepositoryTest {
 		studentRegistration.setFirst_Name("Divyansh");
 		studentRegistration.setLast_Name("Kumar");
 		studentRegistration.setAddress("Ranchi");
-		studentRegistration.setPhone_no("8210127675");
+		studentRegistration.setPhone_no("8210127575");
 		studentRegistration.setCity("Delhi");
 		studentRegistration.setPin(110006);
 		studentRegistration.setGender("Male");
+		studentRegistration.setSecuritypin("821012");
 		
 		StudentRegistration savedRegistration=repo.save(studentRegistration);
 		

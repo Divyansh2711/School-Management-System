@@ -56,6 +56,7 @@ public class AdminRegistration {
 	@Column(nullable=false,unique=true)
 	private String password;
 	
+	@Column(nullable=false)
 	private String securitypin;
 	
 	
@@ -67,7 +68,7 @@ public class AdminRegistration {
 
 	/* Constructor with all the fields */
 	public AdminRegistration(long ID, String first_Name, String last_Name, String email,String gender,
-			String phone_no, String address, String password, String city, Long pin) {
+			String phone_no, String address, String password, String city, Long pin,String securitypin) {
 		super();
 		this.ID = ID;
 		this.first_Name = first_Name;
@@ -79,6 +80,7 @@ public class AdminRegistration {
 		this.city=city;
 		this.pin=pin;
 		this.password = password;
+		this.securitypin=securitypin;
 	}
 
 	/* Getter & Setter method for iD */

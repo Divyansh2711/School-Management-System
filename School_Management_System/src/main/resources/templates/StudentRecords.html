@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="stylesheet" type="text/css" th:href="@{/css/StudentRecords.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/Records.css}">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
@@ -52,16 +52,17 @@
 					<td style="text-align: center;" th:text="${record.email}"></td>
 					<td style="text-align: center;" th:text="${record.phone_no}"></td>
 					<td th:text="${record.address}+', '+${record.city}+', '+${record.pin}"></td>
-					<td><a th:href="@{/StudentUpdate/{ID}(ID=${record.ID})}" class="btn btn-primary">Update</a><br><br>
-					<a th:href="@{/StudentDelete/{ID}(ID=${record.ID})}" class="btn btn-Danger">Delete&nbsp;</a>
+					<td><a th:href="@{/adminProfile/StudentUpdate/{ID}(ID=${record.ID})}" class="btn btn-primary">Update</a><br><br>
+					<a th:href="@{/adminProfile/StudentDelete/{ID}(ID=${record.ID})}" class="btn btn-Danger">Delete&nbsp;</a>
 					</td>
 				</tr>
 			</tbody>
 		</table>
+		
 
-	<a th:href="@{DPS/school/registration}">Add new Student</a>
+	<a th:href="@{/DPS/school/registration}">Add new Student</a>
 	<a id="login" th:href="@{/adminLogin}">Return to Login page</a>
-	<a id="home" th:href="@{DPS/school}">Return to Home page</a>
+	<a id="home" th:href="@{/DPS/school}">Return to Home page</a>
 	</div><br>
 
 </body>

@@ -1,0 +1,69 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/Records.css}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+	<title>Teacher Records</title>
+</head>
+
+<body id="teacherDetails">
+	<div align="center" class="details">
+		<h1>Teacher&nbsp;&nbsp;List</h1><br>
+		<table border="1" class="table table-striped table-responsive-md">
+			<thead class="tbl-header">
+				<tr>
+					<th style="text-align: center;">
+						Registration ID</a>
+					</th>
+					<th style="text-align: center;">
+						First Name</a>
+					</th>
+					<th style="text-align: center;">
+						Last Name</a>
+					</th>
+					<th style="text-align: center;">
+						Subject</a>
+					</th>
+					<th style="text-align: center;">
+						Email</a>
+					</th>
+					<th style="text-align: center;">
+						Phone No.</a>
+					</th>
+					<th style="text-align: center;">
+						Address</a>
+					</th>
+					<th style="text-align: center;">
+						Action</a>
+					</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="teacher : ${teacher}">
+					<td style="text-align: center;" th:text="${teacher.ID}"></td>
+					<td style="text-align: center;" th:text="${teacher.first_Name}"></td>
+					<td style="text-align: center;" th:text="${teacher.last_Name}"></td>
+					<td style="text-align: center;" th:text="${teacher.subject}"></td>
+					<td style="text-align: center;" th:text="${teacher.email}"></td>
+					<td style="text-align: center;" th:text="${teacher.phone_no}"></td>
+					<td th:text="${teacher.address}"></td>
+					<td><a th:href="@{/adminProfile/TeacherUpdate/{ID}(ID=${teacher.ID})}" class="btn btn-primary">Update</a><br><br>
+					<a th:href="@{/adminProfile/TeacherDelete/{ID}(ID=${teacher.ID})}" class="btn btn-Danger">Delete&nbsp;</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	<a th:href="@{/adminProfile/TeacherRegistration}">Add new Teacher</a>
+	<a id="login" th:href="@{/adminLogin}">Return to Login page</a>
+	<a id="home" th:href="@{/DPS/school}">Return to Home page</a>
+	</div><br>
+
+</body>
+
+</html>

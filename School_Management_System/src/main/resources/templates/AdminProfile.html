@@ -13,7 +13,7 @@
     <body>
 
         <div class="container emp-profile">
-            <form method="post">
+            <form th:action="@{/afterLogout}" method="get">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-img">
@@ -35,7 +35,8 @@
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Logout"/>
+                   <input type="submit" class="profile-edit-btn" value="Logout"/>
+                         
                     </div>
                 </div>
                 <div class="row">
@@ -43,19 +44,20 @@
                         <div class="profile-work">
                             <br>
                             <p>Add Details</p>
-                            <a href="">Edit Profile</a><br/>
-                            <a th:href="@{DPS/school/AdminRegistration}">Add Admin</a><br>
+                            <a th:href="@{/AdminUpdate/{ID}(ID=${admin.ID})}">Edit Profile</a><br/>
+                            <a th:href="@{adminProfile/AdminRegistration}">Add Admin</a><br>
                             <a th:href="@{DPS/school/registration}">Add Student</a><br/>
-                            <a th:href="@{DPS/school/Teacherregistration}">Add Teacher</a><br/>
-                            <a href="">Add News</a><br/>
-                            <a href="">Add Events</a><br/>
+                            <a th:href="@{/adminProfile/TeacherRegistration}">Add Teacher</a><br/>
+                            <a th:href="@{/adminProfile/news}">Add News</a><br/>
+                            <a th:href="@{/adminProfile/events}">Add Events</a><br/>
                             <a href=""></a>
                             <p>View Details</p>
-                            <a href="">Admin Records</a><br/>
-                            <a th:href="@{/AllStudent}">Student Records</a><br/>
-                            <a href="">Teacher Records</a><br/>
+                            <a th:href="@{/adminProfile/AllAdmin}">Admin Records</a><br/>
+                            <a th:href="@{/adminProfile/AllStudent}">Student Records</a><br/>
+                            <a th:href="@{/adminProfile/AllTeacher}">Teacher Records</a><br/>
                             <a href="">Feedback </a><br/>
                         </div>
+                       
                     </div>
                     <div class="col-md-8">
                         <div class="tab-content profile-tab" id="myTabContent">

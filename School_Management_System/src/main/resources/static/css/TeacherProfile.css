@@ -108,8 +108,11 @@
               0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;           
 }
 #submit{
-    padding-right: 325px;
-    padding-left: 325px;
+    padding-right: 300px;
+    padding-left: 270px;
+    background-color: green;
+    text-decoration: none;
+    color:black
 }
 #submit:hover{
     background-color: rgb(7, 7, 207);

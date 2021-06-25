@@ -8,7 +8,24 @@ import com.SchoolManagementSystem.Model.AdminRegistration;
 
 @Component
 public interface AdminRepository extends JpaRepository<AdminRegistration,Long>{
-	 
+	
+	
+	/*
+	 * //Return the details of user with particular email
+	 */	
 	@Query("select u from AdminRegistration u where u.email = ?1")
 	AdminRegistration findByemail(String email);
+	
+	/*
+	 * //Return the details of user with particular phone_no
+	 */	
+	@Query("select u from AdminRegistration u where u.phone_no = ?1")
+	AdminRegistration findByPhone(String phone_no);
+	
+	/*
+	 * //Return the details of user with particular password
+	 */	
+	@Query("select u from AdminRegistration u where u.password = ?1")
+	AdminRegistration findByPassword(String password);
+
 }

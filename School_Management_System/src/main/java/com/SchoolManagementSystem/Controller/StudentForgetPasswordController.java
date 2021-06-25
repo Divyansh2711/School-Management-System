@@ -15,7 +15,10 @@ import com.SchoolManagementSystem.Repository.StudentRepository;
 @Controller
 public class StudentForgetPasswordController {
 	
-	
+	/***
+	 *   Created autowired object of StudentRepository
+	 */
+
 	@Autowired
 	private StudentRepository repo;
 	
@@ -29,6 +32,16 @@ public class StudentForgetPasswordController {
 
 	
 	//controller for verify pin
+	/***
+	 * Finds admin by username i.e email validate security pin and changes password
+	 * @param model
+	 * @param email
+	 * @param securitypin
+	 * @param newPassword
+	 * @param admin
+	 * @return  AdminForgotSuccessfull view on succefull password resets
+	 * 
+	 */
 	@PostMapping("/verifySecurityPin")
 	public String verifySecurityPin(Model model,@RequestParam("email") String email,@RequestParam ("securitypin") String securitypin,@RequestParam("newPassword") String newPassword,StudentRegistration student,HttpSession session)
 	{

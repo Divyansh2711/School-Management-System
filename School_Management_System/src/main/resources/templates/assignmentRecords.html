@@ -1,0 +1,71 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/StudentRecords.css}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+	<title>Assignment Records</title>
+</head>
+
+<body id="studentDetails">
+	<div align="center" class="details">
+		<h1>Assignment&nbsp;&nbsp;List</h1><br>
+		<table border="1" class="table table-striped table-responsive-md">
+			<thead class="tbl-header">
+				<tr>
+					<th style="text-align: center;">
+						Assignmnet ID</a>
+					</th>
+					<th style="text-align: center;">
+						Subject</a>
+					</th>
+					<th style="text-align: center;">
+						Class</a>
+					</th>
+					<th style="text-align: center;">
+						Description</a>
+					</th>
+					<th style="text-align: center;">
+						Deadline</a>
+					</th>
+					<th style="text-align: center;">
+						Assignment</a>
+					</th>					
+					<th style="text-align: center;">
+						Action</a>
+					</th>
+					
+				
+					
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="record : ${assignments}">
+					<td style="text-align: center;" th:text="${record.id}"></td>
+					<td style="text-align: center;" th:text="${record.subject}"></td>
+					<td style="text-align: center;" th:text="${record.slass}"></td>
+					<td style="text-align: center;" th:text="${record.description}"></td>
+					<td style="text-align: center;" th:text="${record.deadline}"></td>
+					<td style="text-align: center;"><a th:href="@{'/downloadFile/'+${record.id}}" class="btn btn-primary">Download File</a></td>
+		
+		
+					
+					<td>
+					<a th:href="@{'/teacherProfile/viewSubmittedAssignmentSection/'+${record.id}}" class="btn btn-primary">Submissions</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	
+	<a th:href="@{/teachersProfile/getAssignmentForm}"><b>Give  New Assignment <b></a>&nbsp; &nbsp; &nbsp; &nbsp; 
+	
+	<a th:href="@{/DPS/school}">  Home  </a> 	
+	</div><br>
+
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 
-<html lang="en" xlmns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="ISO-8859-1">
   <title>Registration Page</title>
@@ -13,7 +13,9 @@
 <body>
 
     <h1>TEACHER REGISTRATION FORM</h1>  
-<form th:method="POST" th:object="${teacher}" th:action="@{DPS/school/registration/process_TeacherRegistration}">
+    
+   
+<form th:method="POST" th:object="${teacher}" th:action="@{/adminProfile/process_TeacherRegistration}">
 <table align="center" cellpadding = "10"> 
  
     <!----- First Name ---------------------------------------------------------->
@@ -46,7 +48,7 @@
     <tr>
     <td>Phone Number</td>
     <td>
-    <input type="text" name="phone_no" maxlength="10" placeholder="Enter your mobile number" pattern="^[6-9]\d{9}$" required field="*{phone_no}" minlength="10"/>
+    <input type="text" name="phone_no"  placeholder="Enter your mobile number" pattern="^[6-9]\d{9}$" required field="*{phone_no}" minlength="10" maxlength="10"/>
     </td>
     </tr>
 
@@ -62,14 +64,14 @@
         <!----- City ---------------------------------------------------------->
         <tr>
             <td>City</td>
-            <td><input type="text" name="City" maxlength="30" pattern="^[A-Za-z]+"placeholder="Enter your current city" field="*{city}" />
+            <td><input type="text" name="City" maxlength="30"  placeholder="Enter your current city" field="*{city}" />
             </td>
             </tr>
              
         <!----- Pin Code ---------------------------------------------------------->
         <tr>
         <td>Pin Code</td>
-        <td><input type="text" name="pin" maxlength="6" minlength="6" pattern="[0-9]{6}" placeholder="Enter your current area code" field="*{pin}" required/>
+        <td><input type="number" name="pin" maxlength="6"   pattern="[0-9]{6}" placeholder="Enter your current area code" field="*{pin}" required/>
         </td>
         </tr>
      
@@ -77,13 +79,13 @@
         <!----- Address ---------------------------------------------------------->
         <tr>
         <td>Address<br /><br /><br /></td>
-        <td><textarea name="Address" rows="3" cols="20" placeholder="Enter your current address"pattern="^[A-Za-z,]+" required field="*{address}" minlength="10"></textarea></td>
+        <td><textarea name="Address" rows="3" cols="20" placeholder="Enter your current address" pattern="^[A-Za-z,]+" required field="*{address}" minlength="10"></textarea></td>
         </tr>
 
         <tr>
         <td>Password</td>
         <td>
-        <input type="password" name="password"  placeholder="Enter your password" required field="*{password}" minlength="6"/>
+        <input type="password" name="password"  placeholder="Enter your password" required th:field="*{password}" minlength="6"/>
         </td>
         </tr>
         

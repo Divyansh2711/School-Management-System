@@ -13,7 +13,7 @@
 <body>
 
     <h1>ADMIN REGISTRATION FORM</h1>  
-<form th:method="POST" th:object="${admin}" th:action="@{DPS/school/registration/process_AdminRegistration}">
+<form th:method="POST" th:object="${admin}" th:action="@{/adminProfile/process_AdminRegistration}">
 <table align="center" cellpadding = "10"> 
  
     <!----- First Name ---------------------------------------------------------->
@@ -63,7 +63,7 @@
         <!----- Pin Code ---------------------------------------------------------->
         <tr>
         <td>Pin Code</td>
-        <td><input type="text" name="pin" maxlength="6" placeholder="Enter your current area code" field="*{pin}"/>
+        <td><input type="number" name="pin" maxlength="6" placeholder="Enter your current area code" field="*{pin}"/>
         </td>
         </tr>
      

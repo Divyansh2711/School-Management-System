@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Failure Page</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/regfail.css}"/>
+</head>
+<body>
+<section>
+    <div class="rt-container">
+          <div class="col-rt-12">
+              <div class="Scriptcontent">
+              
+<!-- partial:index.partial.html -->
+<div id='card' class="animated fadeIn">
+  <div id='upper-side'>
+    <?xml version="1.0" encoding="utf-8"?>
+      
+      <h3 id='status'>
+      Registration Failed
+    </h3>
+  </div>
+  <div id='lower-side'>
+    <p id='message' th:text="${message}">
+	
+    </p>
+    <a th:href="@{${link}}" id="contBtn">Register Again</a>
+  </div>
+</div>
+<!-- partial -->
+    		
+           
+    		</div>
+		</div>
+    </div>
+</section>
+     
+
+
+</body>
+</html>

@@ -34,6 +34,7 @@ public class TeacherRepositoryTest {
 		teacherRegistration.setAddress("Ranchi");
 		teacherRegistration.setPhone_no("8210127675");
 		teacherRegistration.setSubject("English");
+		teacherRegistration.setSecuritypin("821012");
 		
 		
 		TeacherRegistration savedRegistration=teacherRepo.save(teacherRegistration);

@@ -14,10 +14,14 @@ import com.SchoolManagementSystem.Repository.TeacherRepository;
 public class TeacherForgotPasswordController {
 	
 	
+	/***
+	 *   Created autowired object of TeacherRepository
+	 */
 
         @Autowired
         private TeacherRepository repo;
 	
+      //Controller for showing forget password form
 		@GetMapping("/teacherForgotPassword")
 		public String showForgotPasswordPage()
 		{
@@ -25,6 +29,17 @@ public class TeacherForgotPasswordController {
 			
 		}
 		
+		//controller for verify pin
+		/***
+		 * Finds admin by username i.e email validate security pin and changes password
+		 * @param model
+		 * @param email
+		 * @param securitypin
+		 * @param newPassword
+		 * @param admin
+		 * @return  AdminForgotSuccessfull view on succefull password resets
+		 * 
+		 */
 		@PostMapping("/teacherForgotPassword/verifySecurityPin")
 		public String verifySecurityPin(Model model,@RequestParam("email") String email,@RequestParam ("securitypin") String securitypin,@RequestParam("newPassword") String newPassword,TeacherRegistration teacher)
 		{

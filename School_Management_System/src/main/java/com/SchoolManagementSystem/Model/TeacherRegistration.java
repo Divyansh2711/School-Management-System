@@ -50,6 +50,7 @@ public class TeacherRegistration {
 	private String password;
 	
 	/*This is security pin column*/
+	@Column(nullable=false)
 	private String securitypin;
 	
 	/* Default constructor with no fields */

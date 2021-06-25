@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Mission & Vision</title>
+	<base href="/">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<section class="sec"><br>
+		<div class="text-box" style="align-items: center;">
+			<img class="logo"
+				src="https://th.bing.com/th/id/OIP.4_EzOmMzv4dpp_AGVAbWhQAAAA?w=125&h=180&c=7&o=5&dpr=1.25&pid=1.7"
+				height="100">&nbsp;
+			<span class="text">
+				<h1>DELHI PUBLIC SCHOOL</h1>
+				<p>SAIL Township, Delhi, India</p>
+			</span>
+			<span class="links">
+				<nav class="topnav">
+					<ul id="topnav">
+						<LI class="Admin"><a th:href="@{/adminLogin}">Admin</a></LI>
+						<LI class="Teacher"><a th:href="@{/teacherLogin}">Teacher</a></LI>
+						<LI class="Student"><a th:href="@{/studentLogin}">Student</a></LI>
+					</ul>
+				</nav>
+			</span>
+			<span class="registration"><button onclick="window.open('/DPS/school/registration')" class="register"
+					type="submit">Registration</button> </span>
+			<span class="fback"><button onclick="window.open('/feedback')" class="feedback"
+					type="submit">Feedback</button> </span>
+		</div>
+		<br>
+		<nav class="nav">
+			<ul id="nav">
+				<li><a href="/DPS/school">Home</a>
+				</li>
+				<li><a href="/DPS/school/AboutUs">About Us</a>
+				</li>
+				<li><a href="/DPS/school/Academics">Academics</a>
+				</li>
+				<li><a href="/DPS/school/Facilities">Facilities</a>
+				</li>
+				<li><a href="/DPS/school/Admission">Admission</a>
+				</li>
+				<li><a href="/DPS/school/Transportation">Transportation</a></li>
+				<li><a href="/DPS/school/Programme">Programmes</a>
+				</li>
+				<li><a href="/DPS/school/News">News & Announcements</a></li>
+				<li><a href="/DPS/school/Events">Events</a></li>
+				<li><a href="/DPS/school/Contact Us">Contact US</a></li>
+
+			</ul>
+		</nav>
+		<div class="images">
+			<div class="row">
+				<div class="column">
+					<img src="https://dpsbopal-ahd.edu.in/PageImages/5_Gargi%20Test.jpg" width="650"
+						height="200"></div>
+
+			</div>
+		</div>
+		<div class="description">
+			<h1 class="motto">Mission & Vision</h1>
+			<hr class="ruler"><br>
+			<p> DPS Delhi is committed to provide education that helps to develop children into balanced
+				personalities, with sound values of love, kindness, devotion and service before self.</p>
+		</div>
+
+	</section>
+	<section class="school"><br>
+		<div class="ro">
+			<div class="col" id="ourschool">
+				<h1 id="h1">Our School</h1><br>
+				<ul class="functions">
+					<li><a href="/school/mission">Mission and Vision</a></li>
+					<li><a href="/school/campus">Campus</a></li>
+					<li><a href="/school/message">Message from Principal</a></li>
+					<li><a href="/school/awards">Awards</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h1 id="h2">Academics</h1><br>
+				<ul class="functions">
+					<li><a href="/academics/books">Book List</a></li>
+					<li><a href="/academics/innovative">Innovative Practices</a></li>
+					<li><a href="/academics/policy">Home Policy</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h1 id="h3">Programmes</h1><br>
+				<ul class="functions">
+					<li><a href="/programmes/extra">Extra Curricular</a></li>
+					<li><a href="/programmes/visual">Visual Arts</a></li>
+					<li><a href="/programmes/collab">International Collaboration</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h1 id="h4">Curriculum</h1><br>
+				<ul class="functions">
+					<li><a href="/curriculum/pre-prim">Pre Primary</a></li>
+					<li><a href="/curriculum/primary">Primary (I-V)</a></li>
+					<li><a href="/curriculum/secondary">Secondary(VI-X)</a></li>
+					<li><a href="/curriculum/senior-sec">Senior Secondary(XI-XII)</a></li>
+				</ul>
+			</div>
+		</div>
+		<br>
+	</section>
+</body>
+
+</html>

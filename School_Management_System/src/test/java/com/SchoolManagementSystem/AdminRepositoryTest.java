@@ -37,6 +37,7 @@ public class AdminRepositoryTest {
 		adminRegistration.setCity("Delhi");
 		adminRegistration.setPin(110009);
 		adminRegistration.setGender("Male");
+		adminRegistration.setSecuritypin("110245");
 		
 		AdminRegistration savedRegistration=adminRepo.save(adminRegistration);
 		

@@ -8,5 +8,8 @@ import com.SchoolManagementSystem.Model.Feedback;
 @Component
 public interface FeedbackRepository extends JpaRepository<Feedback,Long>{
 	
+	/*
+	 * //Return the details of user with particular email
+	 */	
 	Feedback findByemail(String email);
 }

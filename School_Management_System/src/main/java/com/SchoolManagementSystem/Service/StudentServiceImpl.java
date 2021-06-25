@@ -14,7 +14,7 @@ import com.SchoolManagementSystem.Repository.StudentRepository;
  * This service class will perform all the crud (create, read, update and delete) operations.
  */
 @Service
-public class StudentServiceImpl implements StudentService {
+public class StudentServiceImpl implements StudentCRUDService {
 
 	/*
 	 * Object creation of StudentRepository class.
