@@ -24,7 +24,6 @@ public interface StudentRepository extends JpaRepository<StudentRegistration,Lon
 
 
 
-<<<<<<< HEAD
 	/*
 	 * //Return the details of user with particular ID
 	 */	
@@ -37,8 +36,6 @@ public interface StudentRepository extends JpaRepository<StudentRegistration,Lon
 	 */	
 	@Query("select u from StudentRegistration u where u.phone_no = ?1")
 	StudentRegistration findByPhone(String phone_no);
-=======
->>>>>>> e3f1abb797095a70843f8fb2e65b9cc28b5b88fb
 	
 	
 	/*
@@ -52,18 +49,6 @@ public interface StudentRepository extends JpaRepository<StudentRegistration,Lon
 	 * //Return the details of user with particular ID
 	 */	
 	@Query("select u from StudentRegistration u where u.id = ?1")
-<<<<<<< HEAD
 	List<StudentRegistration> findByIDlist(long ID);
-=======
-    StudentRegistration findByID(long id);
-
-
-
-	@Query("select u from StudentRegistration u where u.phone_no = ?1")
-	StudentRegistration findByPhone(String phone_no);
-	
-	@Query("select u from StudentRegistration u where u.password = ?1")
-	StudentRegistration findByPassword(String password);
->>>>>>> e3f1abb797095a70843f8fb2e65b9cc28b5b88fb
     
 }

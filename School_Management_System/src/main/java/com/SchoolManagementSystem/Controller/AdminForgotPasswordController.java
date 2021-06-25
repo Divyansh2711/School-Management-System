@@ -22,14 +22,10 @@ public class AdminForgotPasswordController {
     @Autowired
     private  AdminRepository repo;
 
-<<<<<<< HEAD
     /***
      * 
      * @return AdminForgotPassword view
      */
-=======
-
->>>>>>> e3f1abb797095a70843f8fb2e65b9cc28b5b88fb
 	@GetMapping("/adminForgotPassword")
 	public String showForgotPasswordPage()
 	{
@@ -50,12 +46,7 @@ public class AdminForgotPasswordController {
 	@PostMapping("/adminForgotPassword/verifySecurityPin")
 	public String verifySecurityPin(Model model,@RequestParam("email") String email,@RequestParam ("securitypin") String securitypin,@RequestParam("newPassword") String newPassword,AdminRegistration admin)
 	{
-<<<<<<< HEAD
 	 
-=======
-	   BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-		
->>>>>>> e3f1abb797095a70843f8fb2e65b9cc28b5b88fb
 		
 	  BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();	
 	  admin = repo.findByemail(email);
@@ -71,15 +62,6 @@ public class AdminForgotPasswordController {
 		{
 			if(encoder.matches(securitypin, admin.getSecuritypin()))
 			{
-<<<<<<< HEAD
-=======
-				if (repo.findByPassword(newPassword)!=null)
-				{
-					model.addAttribute("message", "Please enter a different password");
-					return "AdminForgotPassword";
-				
-				}
->>>>>>> e3f1abb797095a70843f8fb2e65b9cc28b5b88fb
 				admin.setPassword((encoder.encode(newPassword)));
 				repo.save(admin);
 				

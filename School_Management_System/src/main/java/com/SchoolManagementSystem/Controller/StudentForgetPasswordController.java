@@ -59,13 +59,6 @@ public class StudentForgetPasswordController {
 		{
 			if(securitypin.equals(student.getSecuritypin()))
 			{
-				if (repo.findByPassword(newPassword)!=null)
-				{
-					model.addAttribute("message", "Please enter a different password");
-					return "TeacherForgotPassword";
-				
-				}
-
 				student.setPassword((newPassword));
 				repo.save(student);
 				

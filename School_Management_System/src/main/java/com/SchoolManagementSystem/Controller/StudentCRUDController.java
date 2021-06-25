@@ -19,10 +19,7 @@ public class StudentCRUDController {
 	@Autowired
 	private StudentCRUDService studentService;
 	
-<<<<<<< HEAD
 	//Admin will be able to view All the Student Records.
-=======
->>>>>>> e3f1abb797095a70843f8fb2e65b9cc28b5b88fb
 	@GetMapping("/adminProfile/AllStudent")
 	public String viewStudentDetails(ModelMap model) {
 		model.addAttribute("student",studentService.getAllStudent());
@@ -58,13 +55,9 @@ public class StudentCRUDController {
 		model.addAttribute("update", student);
 		return "UpdateStudent";
 	}
-<<<<<<< HEAD
 	/*
 	 * //Admin will be able to delete the details of a particular student.
 	 */	
-=======
-	
->>>>>>> e3f1abb797095a70843f8fb2e65b9cc28b5b88fb
 	@GetMapping("adminProfile/StudentDelete/{ID}")
 	public String deleteStudent(@PathVariable (value = "ID") long ID) { 
 		this.studentService.deleteStudentById(ID);

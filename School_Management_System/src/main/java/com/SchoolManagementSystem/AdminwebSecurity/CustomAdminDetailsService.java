@@ -9,7 +9,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import com.SchoolManagementSystem.Model.AdminRegistration;
 import com.SchoolManagementSystem.Repository.AdminRepository;
 
-<<<<<<< HEAD
 public class CustomAdminDetailsService implements UserDetailsService {
 	/**  
 	 *  autowired object of AdminRepository 
@@ -28,16 +27,6 @@ public class CustomAdminDetailsService implements UserDetailsService {
 	 */
 	@Override
 	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-=======
-
-public class CustomAdminDetailsService implements UserDetailsService {
-	
-	@Autowired
-	private AdminRepository  repo;
-	@Override
-	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-		// TODO Auto-generated method stub
->>>>>>> e3f1abb797095a70843f8fb2e65b9cc28b5b88fb
 		AdminRegistration admin  = repo.findByemail(email);
 		if (admin==null)
 		{

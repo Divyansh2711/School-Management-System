@@ -52,11 +52,7 @@
 					<td style="text-align: center;" th:text="${record.email}"></td>
 					<td style="text-align: center;" th:text="${record.phone_no}"></td>
 					<td th:text="${record.address}+', '+${record.city}+', '+${record.pin}"></td>
-<<<<<<< HEAD
 					<td><a th:href="@{/adminProfile/StudentUpdate/{ID}(ID=${record.ID})}" class="btn btn-primary">Update</a><br><br>
-=======
-					<td><a th:href="@{/StudentUpdate/{ID}(ID=${record.ID})}" class="btn btn-primary">Update</a><br><br>
->>>>>>> e3f1abb797095a70843f8fb2e65b9cc28b5b88fb
 					<a th:href="@{/adminProfile/StudentDelete/{ID}(ID=${record.ID})}" class="btn btn-Danger">Delete&nbsp;</a>
 					</td>
 				</tr>
@@ -66,11 +62,7 @@
 
 	<a th:href="@{/DPS/school/registration}">Add new Student</a>
 	<a id="login" th:href="@{/adminLogin}">Return to Login page</a>
-<<<<<<< HEAD
 	<a id="home" th:href="@{/DPS/school}">Return to Home page</a>
-=======
-	<a id="home" th:href="@{/adminProfile}">Return to Profile page</a>
->>>>>>> e3f1abb797095a70843f8fb2e65b9cc28b5b88fb
 	</div><br>
 
 </body>
