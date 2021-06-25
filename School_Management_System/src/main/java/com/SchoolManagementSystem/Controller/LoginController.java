@@ -34,6 +34,7 @@ public class LoginController {
 	public String showLoginPage() {
 		return "StudentLogin";
 	}
+<<<<<<< HEAD
 
 	/*
 	 * IF email is correctly entered it will go to Student login page else it will
@@ -58,6 +59,46 @@ public class LoginController {
 			return "StudentLogin";
 		}
 	}
+=======
+	
+	@PostMapping("/studentlgn")
+	public String login(@RequestParam("email") String email,@RequestParam("password") String password,
+			Model model)
+	{
+		StudentRegistration student= repo.findByemail(email);
+		if(student.getPassword().equals(password))
+		{
+			model.addAttribute("student", student);
+			return "StudentProfile";
+		}
+		else
+		{
+			model.addAttribute("message","Invalid username or password");
+			return "StudentLogin";
+			
+		}
+		
+	}
+	
+	
+	/*
+	 * @GetMapping("/adminLogin") public String showAdminLoginPage() { return
+	 * "AdminLogin"; }
+	 * 
+	 * @PostMapping("/adminLogin") public String Adminlogin(@RequestParam("email")
+	 * String email,@RequestParam("password") String password,Model model) {
+	 * AdminRegistration admin= adminRepo.findByemail(email); if(admin!=null &&
+	 * admin.getPassword().equals(password)) { model.addAttribute("admin",admin);
+	 * return "AdminProfile"; } else {
+	 * model.addAttribute("message","Invalid username or password"); return
+	 * "AdminLogin";
+	 * 
+	 * }
+	 * 
+	 * }
+	 */
+	
+>>>>>>> e3f1abb797095a70843f8fb2e65b9cc28b5b88fb
 
 	/*
 	 * //It will Teacher Login Page.
@@ -66,6 +107,7 @@ public class LoginController {
 	public String showTeacherLoginPage() {
 		return "TeacherLogin";
 	}
+<<<<<<< HEAD
 
 	/*
 	 * IF email is correctly entered it will go to Student login page else it will
@@ -85,6 +127,18 @@ public class LoginController {
 				return "TeacherLogin";
 
 			}
+=======
+	
+	@PostMapping("/teacherlgn")
+	public String Teacherlogin(@RequestParam("email") String email,@RequestParam("password") String password,Model model)
+	{
+		TeacherRegistration teacher= teacherRepo.findByEmail(email);
+		if(teacher!=null && teacher.getPassword().equals(password))
+		{
+			model.addAttribute("teacher",teacher);
+			System.out.println();
+			return "TeacherProfile";
+>>>>>>> e3f1abb797095a70843f8fb2e65b9cc28b5b88fb
 		}
 		else {
 			model.addAttribute("message", "Email not found");

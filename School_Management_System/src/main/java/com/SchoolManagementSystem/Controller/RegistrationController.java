@@ -15,7 +15,11 @@ import com.SchoolManagementSystem.Model.TeacherRegistration;
 import com.SchoolManagementSystem.Repository.AdminRepository;
 import com.SchoolManagementSystem.Repository.StudentRepository;
 import com.SchoolManagementSystem.Repository.TeacherRepository;
+<<<<<<< HEAD
 import com.SchoolManagementSystem.Service.RegistrationValidationService;
+=======
+import com.SchoolManagementSystem.Service.RegisrtrationValidationService;
+>>>>>>> e3f1abb797095a70843f8fb2e65b9cc28b5b88fb
 
 @Controller
 @SessionAttributes("email")
@@ -33,9 +37,14 @@ public class RegistrationController {
 	@Autowired
 	private AdminRepository adminRepo;
 	
+<<<<<<< HEAD
 	//object creation of RegistrationValidationService service class. 
 	@Autowired
 	private RegistrationValidationService service;
+=======
+	@Autowired
+	private RegisrtrationValidationService service;
+>>>>>>> e3f1abb797095a70843f8fb2e65b9cc28b5b88fb
 	
 
 	
